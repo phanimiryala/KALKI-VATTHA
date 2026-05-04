@@ -1,0 +1,2930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KĀLKĪ VĀTTHĀ - premium psychedelic streetwear from Melbourne. Goa trance inspired limited drops with worldwide shipping and secure checkout ready.">
+<meta name="theme-color" content="#050407">
+<title>KĀLKĪ VĀTTHĀ - Limited Psychedelic Streetwear</title>
+<link rel="icon" href="assets/kalki-vattha-logo-tight.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<script>
+window.tailwind = window.tailwind || {};
+window.tailwind.config = {
+  corePlugins: {preflight: false},
+  theme: {
+    extend: {
+      colors: {
+        kvGold: "#e0ad4f",
+        kvAcid: "#88f0c4",
+        kvInk: "#050407"
+      }
+    }
+  }
+};
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{
+  --ink:#050407;
+  --ink-2:#0b0910;
+  --ink-3:#141019;
+  --panel:#171219;
+  --paper:#fff5dc;
+  --muted:#b8aa94;
+  --quiet:#72695d;
+  --gold:#e0ad4f;
+  --gold-2:#f4d789;
+  --acid:#88f0c4;
+  --cobalt:#3867ff;
+  --ruby:#d44764;
+  --line:rgba(244,215,137,.2);
+  --line-2:rgba(255,255,255,.1);
+  --shadow:0 30px 120px rgba(0,0,0,.6);
+  --radius:8px;
+  --mx:0;
+  --my:0;
+  --hero-progress:0;
+  --story-progress:0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{
+  min-height:100svh;
+  overflow-x:hidden;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/72px 72px,
+    linear-gradient(180deg,#050407 0%,#0a0711 36%,#050407 100%);
+  color:var(--paper);
+  font-family:Manrope,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  letter-spacing:0;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:200;
+  pointer-events:none;
+  opacity:.23;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+  mix-blend-mode:soft-light;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  background:
+    radial-gradient(circle at 70% 20%,rgba(56,103,255,.18),transparent 26rem),
+    radial-gradient(circle at 20% 74%,rgba(136,240,196,.12),transparent 24rem),
+    linear-gradient(135deg,rgba(212,71,100,.12),transparent 40%);
+}
+a{color:inherit}
+button,input,select{font:inherit}
+button{cursor:pointer}
+img{max-width:100%;display:block}
+.sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap}
+.skip-link{position:fixed;left:1rem;top:1rem;z-index:300;transform:translateY(-150%);background:var(--gold);color:#090705;padding:.7rem 1rem;text-decoration:none;font-weight:900}
+.skip-link:focus{transform:none}
+.grain-line{height:1px;background:linear-gradient(90deg,transparent,var(--line),rgba(136,240,196,.26),var(--line),transparent)}
+.eyebrow{
+  color:var(--gold-2);
+  font-size:.73rem;
+  text-transform:uppercase;
+  letter-spacing:.36em;
+  font-weight:800;
+}
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  border:1px solid var(--line);
+  background:rgba(244,215,137,.055);
+  color:var(--gold-2);
+  border-radius:999px;
+  padding:.5rem .85rem;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-weight:800;
+}
+.kicker::before{content:"";width:7px;height:7px;background:var(--acid);box-shadow:0 0 18px var(--acid);border-radius:50%}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.65rem;
+  min-height:52px;
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:.95rem 1.25rem;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  font-weight:900;
+  font-size:.75rem;
+  line-height:1;
+  transition:transform .25s ease,border-color .25s ease,background .25s ease,color .25s ease,box-shadow .25s ease;
+}
+.btn svg{width:18px;height:18px;stroke-width:2}
+.btn-primary{
+  border-color:transparent;
+  color:#080604;
+  background:linear-gradient(135deg,var(--gold-2),var(--gold) 62%,#bd792c);
+  box-shadow:0 16px 50px rgba(224,173,79,.2);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 70px rgba(224,173,79,.28)}
+.btn-ghost{color:var(--paper);background:rgba(255,255,255,.035)}
+.btn-ghost:hover{border-color:var(--acid);background:rgba(136,240,196,.07)}
+.icon-btn{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  color:var(--paper);
+  background:rgba(12,10,15,.66);
+  border-radius:4px;
+  transition:.25s ease;
+}
+.icon-btn:hover{border-color:var(--gold);background:rgba(244,215,137,.08)}
+.icon-btn svg{width:19px;height:19px;stroke-width:2}
+.nav{
+  position:fixed;
+  inset:0 0 auto 0;
+  height:76px;
+  z-index:120;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:0 clamp(1rem,4vw,4rem);
+  background:linear-gradient(180deg,rgba(5,4,7,.95),rgba(5,4,7,.6),transparent);
+  transition:height .25s ease,background .25s ease,border-color .25s ease,backdrop-filter .25s ease;
+}
+.nav.scrolled{
+  height:64px;
+  background:rgba(5,4,7,.88);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(18px);
+}
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:.7rem;
+  text-decoration:none;
+  color:var(--gold-2);
+  font-family:Outfit,sans-serif;
+  font-weight:800;
+  letter-spacing:.16em;
+  white-space:nowrap;
+}
+.logo-mark{
+  width:168px;
+  height:46px;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid rgba(244,215,137,.28);
+  border-radius:4px;
+  background:#030206;
+  box-shadow:0 12px 40px rgba(0,0,0,.28);
+}
+.logo-word{display:none}
+.nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none}
+.nav-links a{
+  text-decoration:none;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  font-size:.72rem;
+  font-weight:800;
+}
+.nav-links a:hover{color:var(--paper)}
+.nav-actions{display:flex;align-items:center;gap:.65rem}
+.cart-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  min-height:42px;
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:.72rem .9rem;
+  background:rgba(12,10,15,.66);
+  color:var(--gold-2);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:900;
+  font-size:.72rem;
+}
+.cart-count{
+  display:grid;
+  place-items:center;
+  min-width:20px;
+  height:20px;
+  padding:0 .3rem;
+  background:var(--acid);
+  color:#06100c;
+  border-radius:999px;
+  font-size:.68rem;
+}
+.drop-bar{
+  position:fixed;
+  left:50%;
+  top:76px;
+  transform:translateX(-50%);
+  z-index:115;
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+  width:min(780px,calc(100% - 2rem));
+  padding:.55rem .85rem;
+  background:rgba(12,10,15,.78);
+  border:1px solid rgba(136,240,196,.22);
+  backdrop-filter:blur(16px);
+  border-radius:999px;
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
+  color:var(--muted);
+  font-size:.82rem;
+}
+.drop-bar b{color:var(--paper);font-weight:900}
+.drop-bar .spark{width:8px;height:8px;border-radius:999px;background:var(--ruby);box-shadow:0 0 18px var(--ruby);flex:0 0 auto}
+.drop-bar a{margin-left:auto;color:var(--acid);text-transform:uppercase;letter-spacing:.14em;font-weight:900;text-decoration:none;font-size:.68rem}
+.depth-canvas{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:-2;
+  pointer-events:none;
+  opacity:.72;
+}
+.hero{
+  position:relative;
+  min-height:100svh;
+  overflow:hidden;
+  display:grid;
+  align-items:center;
+  padding:8.8rem clamp(1rem,4vw,4rem) 5rem;
+  isolation:isolate;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:auto -20vw -24vh -20vw;
+  height:45vh;
+  z-index:-1;
+  background:
+    linear-gradient(90deg,transparent,rgba(244,215,137,.2),transparent),
+    repeating-linear-gradient(90deg,rgba(244,215,137,.16) 0 1px,transparent 1px 90px);
+  transform:perspective(900px) rotateX(72deg) translateY(calc(var(--hero-progress) * -90px));
+  transform-origin:center bottom;
+  opacity:.7;
+}
+.hero-shell{
+  width:min(1260px,100%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(380px,.86fr);
+  gap:clamp(2rem,5vw,5rem);
+  align-items:center;
+}
+.hero-shell > *,.story-grid > *,.fit-grid > *,.lab-grid > *,.origin-grid > *,.ms-grid > *{min-width:0}
+.hero-copy{position:relative;z-index:2}
+.hero-brand-card{
+  width:min(420px,100%);
+  margin-bottom:1rem;
+  border:1px solid rgba(244,215,137,.2);
+  border-radius:var(--radius);
+  padding:.55rem;
+  background:rgba(255,255,255,.035);
+  box-shadow:0 20px 70px rgba(0,0,0,.28);
+  overflow:hidden;
+}
+.hero-brand-card img{
+  width:100%;
+  height:auto;
+  border-radius:5px;
+}
+.hero-brand-card span{
+  display:block;
+  margin-top:.5rem;
+  color:var(--quiet);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:900;
+}
+.hero h1{
+  margin:.85rem 0 1rem;
+  max-width:760px;
+  font-family:Syne,Outfit,sans-serif;
+  font-size:clamp(3.55rem,9vw,8.8rem);
+  line-height:.84;
+  letter-spacing:0;
+  color:var(--paper);
+  text-transform:uppercase;
+}
+.hero h1 span{
+  display:block;
+  color:transparent;
+  background:linear-gradient(110deg,#fff7dc 0%,var(--gold-2) 35%,var(--acid) 67%,#cbd7ff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.hero-lead{
+  max-width:min(700px,100%);
+  color:#e8dcc5;
+  font-family:Manrope,sans-serif;
+  font-size:clamp(1.35rem,2.3vw,2.15rem);
+  line-height:1.25;
+  font-weight:600;
+  text-wrap:balance;
+}
+.hero-copy > p:not(.hero-lead):not(.eyebrow){
+  max-width:650px;
+  margin-top:1rem;
+  color:var(--muted);
+  font-size:1.05rem;
+  line-height:1.7;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin:1.8rem 0 1.2rem}
+.hero-sound{
+  width:min(620px,100%);
+  overflow:hidden;
+  border:1px solid rgba(255,106,34,.34);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(135deg,rgba(255,106,34,.13),rgba(136,240,196,.05)),
+    rgba(255,255,255,.035);
+  padding:.72rem;
+  box-shadow:0 20px 70px rgba(0,0,0,.28);
+}
+.hero-sound-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.8rem;
+  margin-bottom:.55rem;
+}
+.sound-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  color:#ff8a3d;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.72rem;
+  font-weight:900;
+}
+.sound-link .brand-icon{width:22px;height:22px}
+.hero-sound-head span{
+  color:var(--muted);
+  font-size:.8rem;
+  font-weight:700;
+  min-width:0;
+}
+.sound-purpose{
+  margin:-.15rem 0 .6rem;
+  color:#e8dcc5;
+  font-size:.86rem;
+  line-height:1.45;
+  overflow-wrap:anywhere;
+}
+.hero-sound iframe{
+  width:100%;
+  height:92px;
+  display:block;
+  border:0;
+  border-radius:5px;
+  background:#111;
+}
+.trust-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:.6rem;
+  max-width:760px;
+  margin-top:1.4rem;
+}
+.trust-chip{
+  min-height:58px;
+  border:1px solid var(--line-2);
+  background:rgba(255,255,255,.035);
+  padding:.7rem .75rem;
+  border-radius:4px;
+}
+.trust-chip b{
+  display:block;
+  color:var(--paper);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.72rem;
+}
+.trust-chip span{display:block;margin-top:.2rem;color:var(--quiet);font-size:.82rem;line-height:1.25}
+.hero-stage{
+  position:relative;
+  min-height:720px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:1rem;
+  perspective:1200px;
+  padding-top:1rem;
+}
+.stage-rings{
+  position:absolute;
+  inset:8% -10% 12%;
+  transform-style:preserve-3d;
+  transform:
+    rotateX(calc(66deg - var(--hero-progress) * 18deg))
+    rotateZ(calc(var(--mx) * 6deg));
+  opacity:.82;
+}
+.stage-rings span{
+  position:absolute;
+  inset:12%;
+  border:1px solid rgba(244,215,137,.24);
+  border-radius:50%;
+  transform:translateZ(calc(var(--i) * 48px));
+  box-shadow:0 0 50px rgba(224,173,79,.08) inset;
+}
+.stage-rings span:nth-child(1){--i:0;border-color:rgba(136,240,196,.28)}
+.stage-rings span:nth-child(2){--i:1;inset:20%;border-style:dashed}
+.stage-rings span:nth-child(3){--i:2;inset:29%;border-color:rgba(212,71,100,.25)}
+.stage-rings span:nth-child(4){--i:3;inset:38%}
+.hero-product{
+  position:relative;
+  z-index:3;
+  width:min(560px,92vw);
+  aspect-ratio:.86;
+  display:grid;
+  place-items:center;
+  cursor:grab;
+  touch-action:none;
+  transform-style:preserve-3d;
+  will-change:transform;
+  backface-visibility:hidden;
+  transform:
+    translateY(calc(var(--hero-progress) * -60px))
+    rotateX(calc(var(--my) * -7deg))
+    rotateY(calc(var(--mx) * 9deg))
+    translateZ(54px);
+  transition:transform .08s linear;
+  filter:drop-shadow(0 50px 80px rgba(0,0,0,.62));
+}
+.hero-product:active{cursor:grabbing}
+.hoodie-image-360{
+  position:relative;
+  z-index:2;
+  width:min(500px,100%);
+  aspect-ratio:.78;
+  transform-style:preserve-3d;
+  transform:
+    rotateX(-4deg)
+    rotateY(var(--hoodie-rotation,0deg));
+  transition:filter .28s ease;
+  filter:drop-shadow(0 48px 70px rgba(0,0,0,.58));
+}
+.hoodie-image-360::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:4%;
+  width:62%;
+  height:9%;
+  transform:translateX(-50%) rotateX(74deg) translateZ(-34px);
+  border-radius:50%;
+  background:radial-gradient(ellipse,rgba(0,0,0,.62),transparent 68%);
+  filter:blur(2px);
+}
+.hoodie-face{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  backface-visibility:hidden;
+  transform-style:preserve-3d;
+}
+.hoodie-face.back{
+  transform:rotateY(180deg) translateZ(12px);
+  filter:brightness(.52) saturate(.65);
+}
+.hoodie-face.front{transform:translateZ(14px)}
+.hoodie-face img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:6px;
+  transform:translateZ(1px);
+  clip-path:polygon(2% 0,98% 0,98% 96%,50% 100%,2% 96%);
+}
+.hoodie-face.back img{
+  transform:scaleX(-1) translateZ(1px);
+  opacity:.72;
+}
+.model-status{
+  position:absolute;
+  left:.75rem;
+  right:.75rem;
+  top:.75rem;
+  z-index:5;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:.5rem;
+  pointer-events:none;
+}
+.model-pill,.model-toggle{
+  min-height:32px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(244,215,137,.25);
+  border-radius:999px;
+  background:rgba(5,4,7,.68);
+  backdrop-filter:blur(12px);
+  color:var(--gold-2);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.62rem;
+  font-weight:900;
+  padding:.45rem .65rem;
+}
+.model-toggle{
+  pointer-events:auto;
+  color:var(--paper);
+  cursor:pointer;
+}
+.model-toggle:hover{border-color:rgba(136,240,196,.42);color:var(--acid)}
+.model-hint{
+  position:absolute;
+  left:50%;
+  bottom:.85rem;
+  z-index:5;
+  transform:translateX(-50%);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  background:rgba(5,4,7,.62);
+  color:var(--muted);
+  padding:.45rem .7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.6rem;
+  font-weight:900;
+  pointer-events:none;
+}
+.hero-product::before,.hero-product::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  border:1px solid rgba(244,215,137,.34);
+  transform-style:preserve-3d;
+}
+.hero-product::before{
+  inset:7%;
+  transform:translateZ(-70px) rotateZ(10deg);
+}
+.hero-product::after{
+  inset:12% 4%;
+  border-color:rgba(136,240,196,.25);
+  transform:translateZ(-120px) rotateZ(-8deg);
+}
+.quick-buy{
+  position:relative;
+  z-index:6;
+  width:min(620px,100%);
+  border:1px solid rgba(244,215,137,.24);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(135deg,rgba(244,215,137,.08),rgba(136,240,196,.035)),
+    linear-gradient(180deg,rgba(18,14,20,.94),rgba(9,7,12,.9));
+  backdrop-filter:blur(18px);
+  box-shadow:0 26px 90px rgba(0,0,0,.42);
+  padding:1rem;
+  margin-top:-.15rem;
+}
+.quick-buy::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(244,215,137,.34),transparent 35%,rgba(136,240,196,.22));
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;
+  -webkit-mask-composite:xor;
+  padding:1px;
+}
+.quick-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.quick-top h2{font-family:Outfit,sans-serif;font-size:1rem;letter-spacing:.04em;color:var(--paper)}
+.quick-price{font-family:Outfit,sans-serif;font-size:1.35rem;color:var(--gold-2);white-space:nowrap}
+.size-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem;margin:1rem 0}
+.size-row button,.fit-options button,.vibe-options button{
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:rgba(255,255,255,.035);
+  color:var(--muted);
+  min-height:40px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.size-row button.active,.fit-options button.active,.vibe-options button.active{
+  background:var(--paper);
+  color:#080604;
+  border-color:transparent;
+}
+.stock-line{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:.86rem;margin:.7rem 0}
+.stock-meter{height:8px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.08)}
+.stock-meter span{display:block;height:100%;width:37%;background:linear-gradient(90deg,var(--ruby),var(--gold),var(--acid))}
+.quick-buy .btn{width:100%;margin-top:1rem}
+.mini-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin-top:.85rem}
+.mini-proof span{
+  color:var(--quiet);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:4px;
+  padding:.45rem;
+  font-size:.75rem;
+  text-align:center;
+  line-height:1.15;
+}
+.quick-buy .accepted-payments.compact{
+  margin-top:.75rem;
+  padding:.55rem;
+}
+.quick-buy .accepted-payments.compact .pay-logo-wall{
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:.35rem;
+}
+.quick-buy .accepted-payments.compact .pay-logo-card{
+  min-height:38px;
+  gap:0;
+}
+.quick-buy .accepted-payments.compact .pay-logo-card .pay-brand-logo{
+  width:38px;
+  height:22px;
+}
+.quick-buy .accepted-payments.compact .pay-logo-card b{display:none}
+.ticker{overflow:hidden;background:linear-gradient(90deg,#ff6a22,var(--gold-2),var(--acid),#9bb3ff);color:#080604}
+.ticker-track{display:flex;width:max-content;animation:ticker 34s linear infinite}
+.ticker span{
+  white-space:nowrap;
+  padding:.72rem 2rem;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font-size:.72rem;
+  font-weight:900;
+}
+@keyframes ticker{to{transform:translateX(-50%)}}
+section{position:relative;padding:clamp(5rem,8vw,8rem) clamp(1rem,4vw,4rem)}
+.wrap{width:min(1180px,100%);margin:auto}
+.tryon-studio{
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(255,106,34,.12),transparent 34%),
+    linear-gradient(215deg,rgba(56,103,255,.16),transparent 38%),
+    #07060a;
+}
+.tryon-grid{
+  display:grid;
+  grid-template-columns:1.06fr .94fr;
+  gap:1.4rem;
+  align-items:stretch;
+}
+.tryon-stage{
+  --garment:#111016;
+  --print:#f4d789;
+  --glow:#88f0c4;
+  position:relative;
+  min-height:640px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border:1px solid rgba(244,215,137,.18);
+  border-radius:var(--radius);
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 74px),
+    linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  perspective:1200px;
+}
+.tryon-stage::before{
+  content:"";
+  position:absolute;
+  inset:auto -18% -24% -18%;
+  height:42%;
+  border-top:1px solid rgba(244,215,137,.22);
+  background:
+    linear-gradient(90deg,transparent,rgba(244,215,137,.16),transparent),
+    repeating-linear-gradient(90deg,rgba(244,215,137,.18) 0 1px,transparent 1px 68px);
+  transform:rotateX(70deg);
+  transform-origin:center top;
+}
+.tryon-badge{
+  position:absolute;
+  left:1rem;
+  top:1rem;
+  z-index:4;
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  padding:.55rem .75rem;
+  background:rgba(5,4,7,.72);
+  color:var(--gold-2);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.7rem;
+  font-weight:900;
+}
+.tryon-avatar{
+  position:relative;
+  z-index:2;
+  width:min(390px,78vw);
+  height:540px;
+  transform-style:preserve-3d;
+  transform:
+    rotateX(calc(var(--my) * -4deg))
+    rotateY(calc(var(--mx) * 9deg))
+    translateZ(54px);
+  transition:transform .08s linear;
+}
+.tryon-stage.has-photo .avatar-line{opacity:.2}
+.avatar-photo{
+  position:absolute;
+  left:50%;
+  top:52px;
+  width:250px;
+  height:420px;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:130px 130px 22px 22px;
+  transform:translateX(-50%) translateZ(-22px);
+  opacity:0;
+  filter:saturate(.95) contrast(1.04);
+  box-shadow:0 30px 80px rgba(0,0,0,.46);
+}
+.tryon-stage.has-photo .avatar-photo{opacity:.82}
+.avatar-line{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(180deg,rgba(255,245,220,.28),rgba(255,245,220,.08));
+  border:1px solid rgba(244,215,137,.18);
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+.avatar-head{top:18px;width:86px;height:86px;border-radius:50%}
+.avatar-body{top:116px;width:160px;height:238px;border-radius:72px 72px 42px 42px}
+.avatar-leg.left,.avatar-leg.right{top:340px;width:58px;height:162px;border-radius:32px}
+.avatar-leg.left{margin-left:-44px}
+.avatar-leg.right{margin-left:44px}
+.tryon-garment{
+  position:absolute;
+  left:50%;
+  top:128px;
+  z-index:3;
+  width:282px;
+  height:318px;
+  display:grid;
+  place-items:center;
+  color:var(--print);
+  border:1px solid color-mix(in srgb,var(--print),transparent 54%);
+  border-radius:74px 74px 12px 12px;
+  background:
+    radial-gradient(circle at 50% 24%,color-mix(in srgb,var(--print),transparent 84%),transparent 32%),
+    linear-gradient(180deg,color-mix(in srgb,var(--garment),white 10%),var(--garment));
+  transform:translateX(-50%) translateZ(72px) rotateX(4deg);
+  filter:drop-shadow(0 42px 70px rgba(0,0,0,.5));
+  box-shadow:0 0 70px color-mix(in srgb,var(--glow),transparent 82%) inset;
+  clip-path:polygon(13% 0,34% 0,40% 11%,60% 11%,66% 0,87% 0,100% 24%,87% 38%,78% 30%,78% 100%,22% 100%,22% 30%,13% 38%,0 24%);
+  transition:width .28s ease,height .28s ease,top .28s ease,border-radius .28s ease,clip-path .28s ease,background .28s ease;
+}
+.tryon-garment[data-piece="tee"]{
+  width:322px;
+  height:244px;
+  top:164px;
+  border-radius:28px 28px 8px 8px;
+  clip-path:polygon(15% 2%,35% 0,42% 11%,58% 11%,65% 0,85% 2%,100% 21%,88% 36%,78% 28%,78% 100%,22% 100%,22% 28%,12% 36%,0 21%);
+}
+.tryon-garment[data-piece="jacket"]{
+  width:292px;
+  height:348px;
+  top:112px;
+  border-radius:34px 34px 10px 10px;
+  clip-path:polygon(21% 0,38% 0,43% 13%,57% 13%,62% 0,79% 0,98% 17%,90% 43%,81% 35%,83% 100%,17% 100%,19% 35%,10% 43%,2% 17%);
+}
+.garment-detail{
+  position:absolute;
+  z-index:2;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .22s ease,transform .28s ease;
+}
+.garment-detail.hood{
+  left:50%;
+  top:3%;
+  width:44%;
+  height:30%;
+  transform:translateX(-50%);
+  border:1px solid color-mix(in srgb,var(--print),transparent 50%);
+  border-radius:50% 50% 42% 42%;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--garment),white 18%),color-mix(in srgb,var(--garment),black 6%));
+  box-shadow:0 16px 30px rgba(0,0,0,.26) inset;
+}
+.garment-detail.collar{
+  left:50%;
+  top:7%;
+  width:29%;
+  height:13%;
+  transform:translateX(-50%);
+  border:2px solid color-mix(in srgb,var(--print),transparent 42%);
+  border-top:0;
+  border-radius:0 0 999px 999px;
+}
+.garment-detail.drawstring{
+  top:23%;
+  width:2px;
+  height:18%;
+  background:color-mix(in srgb,var(--print),white 12%);
+  box-shadow:0 0 12px color-mix(in srgb,var(--print),transparent 55%);
+}
+.garment-detail.drawstring.left{left:45%}
+.garment-detail.drawstring.right{right:45%}
+.garment-detail.drawstring::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-5px;
+  width:6px;
+  height:6px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:currentColor;
+}
+.garment-detail.pocket{
+  left:50%;
+  bottom:19%;
+  width:46%;
+  height:15%;
+  transform:translateX(-50%);
+  border:1px solid color-mix(in srgb,var(--print),transparent 42%);
+  border-radius:12px 12px 28px 28px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--garment),white 12%),color-mix(in srgb,var(--garment),black 7%));
+}
+.garment-detail.zip{
+  left:50%;
+  top:20%;
+  bottom:9%;
+  width:3px;
+  transform:translateX(-50%);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--print),white 10%),color-mix(in srgb,var(--print),transparent 20%));
+  box-shadow:0 0 18px color-mix(in srgb,var(--print),transparent 65%);
+}
+.garment-detail.panel{
+  top:22%;
+  width:27%;
+  height:66%;
+  border:1px solid color-mix(in srgb,var(--print),transparent 58%);
+  background:linear-gradient(160deg,color-mix(in srgb,var(--garment),white 10%),transparent 70%);
+}
+.garment-detail.panel.left{
+  left:21%;
+  transform:skewY(-4deg);
+  border-radius:14px 4px 4px 10px;
+}
+.garment-detail.panel.right{
+  right:21%;
+  transform:skewY(4deg);
+  border-radius:4px 14px 10px 4px;
+}
+.garment-detail.hem{
+  left:20%;
+  right:20%;
+  bottom:6%;
+  height:12px;
+  border-radius:999px;
+  background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--print),transparent 42%),transparent);
+}
+.tryon-garment[data-piece="hoodie"] .hood,
+.tryon-garment[data-piece="hoodie"] .drawstring,
+.tryon-garment[data-piece="hoodie"] .pocket,
+.tryon-garment[data-piece="hoodie"] .hem,
+.tryon-garment[data-piece="tee"] .collar,
+.tryon-garment[data-piece="tee"] .hem,
+.tryon-garment[data-piece="jacket"] .collar,
+.tryon-garment[data-piece="jacket"] .zip,
+.tryon-garment[data-piece="jacket"] .panel,
+.tryon-garment[data-piece="jacket"] .hem{opacity:1}
+.tryon-garment[data-piece="jacket"] .collar{
+  top:5%;
+  width:48%;
+  height:22%;
+  border-radius:0;
+  border:0;
+  background:color-mix(in srgb,var(--print),transparent 74%);
+  clip-path:polygon(0 0,42% 0,50% 100%,58% 0,100% 0,72% 72%,50% 54%,28% 72%);
+}
+.tryon-garment[data-piece="tee"] .hem{bottom:5%}
+.garment-print{
+  position:relative;
+  z-index:4;
+  font-family:Outfit,sans-serif;
+  font-size:4.4rem;
+  font-weight:800;
+  line-height:1;
+  text-shadow:0 0 24px color-mix(in srgb,var(--print),transparent 48%);
+  transform:translateZ(36px);
+  transition:font-size .28s ease,opacity .28s ease,transform .28s ease;
+}
+.tryon-garment[data-piece="tee"] .garment-print{
+  font-size:3.65rem;
+  transform:translateY(10px) translateZ(36px);
+}
+.tryon-garment[data-piece="jacket"] .garment-print{
+  font-size:3.35rem;
+  opacity:.56;
+  transform:translateY(34px) translateZ(36px);
+}
+.garment-name{
+  position:absolute;
+  left:50%;
+  bottom:28px;
+  z-index:5;
+  transform:translateX(-50%);
+  color:color-mix(in srgb,var(--print),white 18%);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.62rem;
+  font-weight:900;
+}
+.tryon-garment[data-piece="tee"] .garment-name{bottom:18px}
+.tryon-garment[data-piece="jacket"] .garment-name{bottom:24px}
+.tryon-shadow{
+  position:absolute;
+  left:50%;
+  bottom:64px;
+  width:320px;
+  height:56px;
+  transform:translateX(-50%) rotateX(68deg);
+  background:radial-gradient(ellipse,rgba(0,0,0,.62),transparent 70%);
+}
+.studio-panel{
+  border:1px solid var(--line-2);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.04);
+  padding:1.2rem;
+  align-self:stretch;
+}
+.studio-panel .section-title{font-size:clamp(2rem,4.4vw,4.4rem)}
+.studio-panel .section-copy{margin-top:.8rem}
+.studio-group{margin-top:1rem}
+.control-label{
+  display:block;
+  margin-bottom:.5rem;
+  color:var(--quiet);
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-size:.68rem;
+  font-weight:900;
+}
+.style-options,.print-options{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.55rem;
+}
+.style-options button,.print-options button,.photo-upload,.photo-reset{
+  min-height:42px;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:rgba(255,255,255,.035);
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.7rem;
+  font-weight:900;
+}
+.style-options button.active,.print-options button.active{
+  background:var(--paper);
+  color:#080604;
+  border-color:transparent;
+}
+.color-options{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.55rem;
+}
+.color-options button{
+  min-height:46px;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:linear-gradient(135deg,var(--swatch),color-mix(in srgb,var(--swatch),black 42%));
+  box-shadow:0 18px 42px color-mix(in srgb,var(--swatch),transparent 76%);
+}
+.color-options button.active{
+  outline:2px solid var(--paper);
+  outline-offset:2px;
+}
+.photo-tools{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:.55rem;
+}
+.photo-upload{
+  position:relative;
+  display:grid;
+  place-items:center;
+}
+.photo-upload input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.photo-reset{padding:0 .9rem}
+.tryon-result{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:.85rem;
+  align-items:center;
+  margin:1.1rem 0;
+  border:1px solid rgba(244,215,137,.22);
+  border-radius:var(--radius);
+  padding:.9rem;
+  background:linear-gradient(135deg,rgba(244,215,137,.08),rgba(136,240,196,.04));
+}
+.tryon-size{
+  display:grid;
+  place-items:center;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:var(--paper);
+  color:#080604;
+  font-family:Syne,Outfit,sans-serif;
+  font-size:2.1rem;
+  font-weight:800;
+}
+.tryon-choice b,.tryon-price{
+  display:block;
+  color:var(--paper);
+  font-family:Outfit,sans-serif;
+  letter-spacing:.04em;
+}
+.tryon-choice span{display:block;margin-top:.2rem;color:var(--muted);font-size:.88rem}
+.tryon-choice small{display:block;margin-top:.18rem;color:var(--quiet);font-size:.78rem;line-height:1.35}
+.tryon-price{color:var(--gold-2);font-size:1.1rem;white-space:nowrap}
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:2rem;
+  margin-bottom:2.4rem;
+}
+.section-title{
+  max-width:780px;
+  margin-top:.55rem;
+  font-family:Syne,Outfit,sans-serif;
+  font-size:clamp(2.1rem,4.8vw,5.1rem);
+  line-height:.95;
+  letter-spacing:0;
+  text-transform:uppercase;
+}
+.section-copy{
+  max-width:620px;
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.72;
+}
+.scroll-theatre{
+  padding:0;
+  background:
+    linear-gradient(180deg,#050407 0%,#100b18 45%,#050407 100%);
+}
+.story-space{height:420svh;position:relative}
+.story-sticky{
+  position:sticky;
+  top:0;
+  min-height:100svh;
+  overflow:hidden;
+  display:grid;
+  align-items:center;
+  padding:5rem clamp(1rem,4vw,4rem);
+}
+.story-sticky::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(5,4,7,.94),rgba(5,4,7,.35) 38%,rgba(5,4,7,.9)),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 96px);
+  pointer-events:none;
+}
+.story-grid{
+  position:relative;
+  z-index:2;
+  width:min(1280px,100%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:.78fr 1.08fr .78fr;
+  gap:2rem;
+  align-items:center;
+}
+.story-copy{min-height:310px;position:relative}
+.story-panel{
+  position:absolute;
+  inset:0 auto auto 0;
+  max-width:360px;
+  opacity:0;
+  transform:translateY(22px);
+  transition:.45s ease;
+}
+.story-panel.active{opacity:1;transform:none}
+.story-panel h2{
+  margin:.65rem 0 .9rem;
+  font-family:Syne,Outfit,sans-serif;
+  font-size:clamp(2rem,4vw,4.6rem);
+  line-height:.94;
+  text-transform:uppercase;
+}
+.story-panel p{color:var(--muted);line-height:1.72;font-size:1.02rem}
+.story-stage{
+  position:relative;
+  min-height:650px;
+  display:grid;
+  place-items:center;
+  perspective:1200px;
+}
+.story-dial{
+  position:absolute;
+  width:min(640px,90vw);
+  aspect-ratio:1;
+  border:1px solid rgba(244,215,137,.22);
+  border-radius:50%;
+  background:
+    conic-gradient(from calc(var(--story-progress) * 360deg),transparent,rgba(136,240,196,.15),transparent,rgba(244,215,137,.18),transparent),
+    radial-gradient(circle,transparent 46%,rgba(244,215,137,.09) 47%,transparent 48%);
+  transform:
+    rotateX(62deg)
+    rotateZ(calc(var(--story-progress) * 290deg))
+    translateY(40px);
+  transform-style:preserve-3d;
+}
+.story-dial::before,.story-dial::after{
+  content:"";
+  position:absolute;
+  inset:12%;
+  border:1px dashed rgba(244,215,137,.24);
+  border-radius:50%;
+}
+.story-dial::after{inset:28%;border-color:rgba(136,240,196,.24);border-style:solid}
+.story-product{
+  width:min(410px,75vw);
+  transform-style:preserve-3d;
+  will-change:transform;
+  backface-visibility:hidden;
+  transform:
+    translateY(calc(-40px + var(--story-progress) * -80px))
+    rotateY(calc(-18deg + var(--story-progress) * 70deg))
+    rotateX(calc(6deg - var(--story-progress) * 18deg))
+    translateZ(120px);
+  filter:drop-shadow(0 40px 70px rgba(0,0,0,.6));
+}
+.story-product img{border-radius:5px}
+.story-notes{display:grid;gap:.85rem}
+.story-note{
+  border:1px solid var(--line-2);
+  background:rgba(255,255,255,.035);
+  border-radius:4px;
+  padding:1rem;
+  transform:translateX(calc((var(--story-progress) - .5) * 24px));
+}
+.story-note b{
+  display:block;
+  color:var(--gold-2);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.74rem;
+  margin-bottom:.35rem;
+}
+.story-note span{color:var(--muted);font-size:.94rem;line-height:1.45}
+.progress-rail{
+  position:absolute;
+  left:clamp(1rem,4vw,4rem);
+  bottom:2rem;
+  right:clamp(1rem,4vw,4rem);
+  height:2px;
+  background:rgba(255,255,255,.11);
+  z-index:3;
+}
+.progress-rail span{
+  display:block;
+  width:calc(var(--story-progress) * 100%);
+  height:100%;
+  background:linear-gradient(90deg,var(--gold),var(--acid),var(--cobalt));
+}
+.collection{background:#07060a}
+.filters{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.filter{
+  min-height:38px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:transparent;
+  color:var(--muted);
+  padding:.55rem .9rem;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.7rem;
+  font-weight:900;
+}
+.filter.active,.filter:hover{background:var(--paper);color:#080604;border-color:transparent}
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+}
+.product{
+  border:1px solid var(--line-2);
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+  border-radius:var(--radius);
+  overflow:hidden;
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.product:hover{transform:translateY(-6px) rotateX(var(--tilt-y,0deg)) rotateY(var(--tilt-x,0deg));border-color:rgba(244,215,137,.36);box-shadow:0 28px 80px rgba(0,0,0,.36)}
+.product-media{
+  position:relative;
+  aspect-ratio:4/5;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(56,103,255,.14),transparent 36%),
+    radial-gradient(circle at 52% 30%,rgba(244,215,137,.18),transparent 40%),
+    #0e0b12;
+}
+.product-media::before{
+  content:"";
+  position:absolute;
+  inset:9%;
+  border:1px solid rgba(244,215,137,.13);
+  transform:rotate(8deg);
+}
+.product-media img{
+  width:86%;
+  filter:drop-shadow(0 30px 45px rgba(0,0,0,.52));
+}
+.garment-symbol{
+  position:relative;
+  z-index:2;
+  width:58%;
+  aspect-ratio:.78;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(244,215,137,.22);
+  border-radius:38% 38% 8px 8px;
+  background:linear-gradient(180deg,#16121a,#09070b);
+  box-shadow:0 35px 80px rgba(0,0,0,.45);
+  color:rgba(244,215,137,.45);
+  font-family:Outfit,sans-serif;
+  font-size:4.2rem;
+}
+.garment-symbol.tee{border-radius:20px 20px 8px 8px;clip-path:polygon(18% 0,34% 0,40% 10%,60% 10%,66% 0,82% 0,100% 25%,86% 38%,77% 29%,77% 100%,23% 100%,23% 29%,14% 38%,0 25%)}
+.badge{
+  position:absolute;
+  left:.8rem;
+  top:.8rem;
+  z-index:3;
+  background:var(--acid);
+  color:#06100c;
+  border-radius:999px;
+  padding:.34rem .65rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.62rem;
+  font-weight:900;
+}
+.product-body{padding:1rem}
+.product h3{font-family:Outfit,sans-serif;font-size:1rem;letter-spacing:.03em;line-height:1.28}
+.product p{min-height:3rem;margin-top:.55rem;color:var(--muted);line-height:1.45;font-size:.92rem}
+.product-controls{
+  display:grid;
+  grid-template-columns:86px 1fr;
+  gap:.6rem;
+  margin-top:.95rem;
+}
+.product select{
+  width:100%;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:#0c0910;
+  color:var(--paper);
+  padding:.65rem .55rem;
+  outline:none;
+}
+.add{
+  border:none;
+  border-radius:4px;
+  background:var(--paper);
+  color:#080604;
+  padding:.72rem .8rem;
+  text-transform:uppercase;
+  font-weight:900;
+  letter-spacing:.12em;
+  font-size:.68rem;
+}
+.add:hover{background:var(--gold-2)}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.8rem}
+.price{font-family:Outfit,sans-serif;color:var(--gold-2);font-size:1.22rem;font-weight:700}
+.stock-small{color:var(--quiet);font-size:.82rem}
+.fit-section{background:linear-gradient(180deg,#07060a,#0d0912)}
+.fit-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:1.4rem;
+  align-items:start;
+}
+.fit-panel,.lab-panel,.ship-panel,.music-panel{
+  border:1px solid var(--line-2);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.035);
+  padding:1.2rem;
+}
+.fit-options,.vibe-options{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin:1rem 0}
+.range-row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;margin:1rem 0}
+.range-row input{width:100%;accent-color:var(--gold)}
+.size-result{
+  min-height:168px;
+  display:grid;
+  align-content:center;
+  border:1px solid rgba(244,215,137,.22);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(135deg,rgba(136,240,196,.09),transparent),
+    rgba(5,4,7,.55);
+  padding:1.2rem;
+}
+.size-result b{font-family:Syne,sans-serif;font-size:clamp(3.2rem,8vw,6rem);line-height:.9;color:var(--gold-2)}
+.size-result span{margin-top:.7rem;color:var(--muted);line-height:1.55}
+.lab{background:#050407}
+.lab-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.4rem;
+  align-items:stretch;
+}
+.bundle-preview{
+  position:relative;
+  min-height:430px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border-radius:var(--radius);
+  border:1px solid rgba(244,215,137,.18);
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 58px),
+    linear-gradient(135deg,rgba(212,71,100,.18),rgba(56,103,255,.12),rgba(136,240,196,.1));
+}
+.bundle-preview::before{
+  content:"";
+  position:absolute;
+  width:72%;
+  aspect-ratio:1;
+  border:1px solid rgba(244,215,137,.3);
+  border-radius:50%;
+  transform:rotateX(62deg) rotateZ(calc(var(--story-progress) * 140deg));
+}
+.bundle-stack{
+  position:relative;
+  width:min(420px,90%);
+  height:330px;
+  transform-style:preserve-3d;
+  perspective:1000px;
+}
+.bundle-item{
+  position:absolute;
+  inset:auto 0 0;
+  margin:auto;
+  width:56%;
+  aspect-ratio:.78;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(244,215,137,.26);
+  border-radius:30px 30px 6px 6px;
+  background:linear-gradient(180deg,#18131b,#09070b);
+  color:rgba(244,215,137,.45);
+  font-family:Outfit,sans-serif;
+  font-size:3.6rem;
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+}
+.bundle-item:nth-child(1){left:-38%;bottom:12%;transform:rotateY(28deg) rotateZ(-9deg)}
+.bundle-item:nth-child(2){bottom:18%;transform:translateZ(70px)}
+.bundle-item:nth-child(3){right:-38%;bottom:10%;transform:rotateY(-28deg) rotateZ(10deg)}
+.lab-copy h3{font-family:Outfit,sans-serif;color:var(--gold-2);letter-spacing:.06em;font-size:1.2rem}
+.lab-copy p{color:var(--muted);line-height:1.68;margin:.75rem 0}
+.bundle-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:1rem 0}
+.bundle-meta span{border:1px solid var(--line-2);border-radius:4px;padding:.75rem;color:var(--muted);font-size:.82rem}
+.bundle-meta b{display:block;color:var(--paper);font-size:1.15rem}
+.origin{background:linear-gradient(180deg,#0d0912,#07060a)}
+.origin-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:2rem;
+  align-items:center;
+}
+.origin-art{
+  min-height:460px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line-2);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(135deg,rgba(56,103,255,.12),transparent 44%),
+    repeating-linear-gradient(45deg,rgba(244,215,137,.08) 0 1px,transparent 1px 44px),
+    #09070b;
+  overflow:hidden;
+  position:relative;
+}
+.origin-art::before{
+  content:"GOA";
+  position:absolute;
+  font-family:Syne,sans-serif;
+  font-weight:800;
+  font-size:clamp(6rem,17vw,14rem);
+  color:rgba(244,215,137,.06);
+  letter-spacing:.04em;
+}
+.origin-logo{
+  position:relative;
+  width:min(420px,86%);
+  border:1px solid rgba(244,215,137,.24);
+  border-radius:5px;
+  box-shadow:0 25px 80px rgba(0,0,0,.45);
+}
+.coordinate{
+  position:relative;
+  margin-top:1rem;
+  text-align:center;
+  color:var(--gold-2);
+  font-family:Outfit,sans-serif;
+  letter-spacing:.17em;
+}
+.quote{
+  margin-top:1rem;
+  border-left:2px solid var(--gold);
+  background:rgba(244,215,137,.045);
+  padding:1.25rem;
+  color:#dfd1ba;
+  font-family:Manrope,sans-serif;
+  font-size:1.28rem;
+  line-height:1.72;
+}
+.research-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin-top:1rem;
+}
+.research-list a{
+  border:1px solid var(--line-2);
+  border-radius:999px;
+  padding:.55rem .75rem;
+  color:var(--muted);
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.68rem;
+  font-weight:900;
+}
+.research-list a:hover{color:var(--paper);border-color:rgba(136,240,196,.34)}
+.music-shipping{background:#07060a}
+.ms-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.music-panel h3,.ship-panel h3{font-family:Outfit,sans-serif;color:var(--gold-2);letter-spacing:.06em;margin-bottom:.75rem}
+.soundcloud-frame{width:100%;height:166px;border:0;border-radius:4px;background:#111;margin-top:1rem}
+.connect-logos{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:.75rem;
+  margin:1.2rem 0 1rem;
+  perspective:1000px;
+}
+.logo-tile{
+  position:relative;
+  min-height:126px;
+  display:grid;
+  align-content:space-between;
+  gap:.8rem;
+  border:1px solid var(--line-2);
+  border-radius:var(--radius);
+  padding:.9rem;
+  overflow:hidden;
+  color:var(--paper);
+  text-decoration:none;
+  background:
+    radial-gradient(circle at 75% 15%,rgba(255,255,255,.14),transparent 32%),
+    linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.018));
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease,background .3s ease;
+}
+.logo-tile::before{
+  content:"";
+  position:absolute;
+  inset:-40% -20% auto;
+  height:90px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:translateX(-70%) rotate(16deg);
+  transition:transform .55s ease;
+}
+.logo-tile:hover{
+  transform:translateY(-6px) rotateX(var(--tilt-y,8deg)) rotateY(var(--tilt-x,-7deg)) translateZ(20px);
+  border-color:color-mix(in srgb,var(--brand),white 18%);
+  box-shadow:0 26px 70px color-mix(in srgb,var(--brand),transparent 78%);
+  background:
+    radial-gradient(circle at 75% 15%,color-mix(in srgb,var(--brand),transparent 68%),transparent 34%),
+    linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
+}
+.logo-tile:hover::before{transform:translateX(95%) rotate(16deg)}
+.logo-tile .brand-icon{
+  width:38px;
+  height:38px;
+  color:var(--brand);
+  filter:drop-shadow(0 10px 24px color-mix(in srgb,var(--brand),transparent 60%));
+}
+.logo-tile b{
+  display:block;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.73rem;
+}
+.logo-tile span{
+  display:block;
+  margin-top:.22rem;
+  color:var(--muted);
+  font-size:.82rem;
+  line-height:1.35;
+}
+.brand-icon{width:18px;height:18px;display:inline-block;vertical-align:-.18em;flex:0 0 auto}
+.footer-socials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin-top:1rem;
+}
+.footer-socials a{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  color:var(--muted);
+  background:rgba(255,255,255,.025);
+}
+.footer-socials a:hover{color:var(--gold-2);border-color:rgba(244,215,137,.36);transform:translateY(-2px)}
+.footer-socials .brand-icon{width:21px;height:21px}
+.ship-list{display:grid;gap:.75rem;margin-top:.9rem}
+.ship-list li{list-style:none;display:flex;gap:.75rem;color:var(--muted);line-height:1.55}
+.ship-list li::before{content:"";width:7px;height:7px;flex:0 0 auto;margin-top:.55rem;background:var(--acid);border-radius:50%}
+.accepted-payments{
+  margin-top:1rem;
+  border:1px solid rgba(244,215,137,.18);
+  border-radius:var(--radius);
+  padding:.85rem;
+  background:
+    linear-gradient(135deg,rgba(244,215,137,.055),rgba(136,240,196,.025)),
+    rgba(255,255,255,.025);
+}
+.accepted-payments > span{
+  display:block;
+  margin-bottom:.65rem;
+  color:var(--quiet);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.66rem;
+  font-weight:900;
+}
+.pay-logo-wall{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(86px,1fr));
+  gap:.55rem;
+}
+.pay-logo-card{
+  min-width:0;
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.4rem;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:5px;
+  color:#141019;
+  background:#fff;
+  box-shadow:0 14px 34px rgba(0,0,0,.22);
+  overflow:hidden;
+}
+.pay-logo-card .pay-brand-logo{
+  width:54px;
+  height:30px;
+  object-fit:contain;
+  display:block;
+}
+.pay-logo-card b{
+  color:#141019;
+  font-size:.62rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.accepted-payments.compact{padding:.65rem;margin-top:.8rem}
+.accepted-payments.compact .pay-logo-wall{grid-template-columns:repeat(3,minmax(0,1fr));gap:.42rem}
+.accepted-payments.compact .pay-logo-card{min-height:42px}
+.accepted-payments.compact .pay-logo-card .pay-brand-logo{width:42px;height:22px}
+.accepted-payments.compact .pay-logo-card b{font-size:.56rem}
+.newsletter{
+  text-align:center;
+  background:
+    linear-gradient(90deg,transparent,rgba(244,215,137,.08),transparent),
+    #050407;
+}
+.newsletter .section-title{margin-inline:auto}
+.newsletter .section-copy{margin:1rem auto 0}
+.newsletter form{
+  display:grid;
+  grid-template-columns:1fr auto;
+  width:min(560px,100%);
+  margin:1.7rem auto 0;
+  border:1px solid var(--line);
+  border-radius:4px;
+  overflow:hidden;
+  background:#0c0910;
+}
+.newsletter input{min-width:0;border:0;background:transparent;color:var(--paper);padding:1rem 1.1rem;outline:none}
+.newsletter button{border:0;background:var(--gold);color:#080604;padding:1rem 1.15rem;text-transform:uppercase;letter-spacing:.14em;font-weight:900}
+.footer{
+  border-top:1px solid var(--line);
+  background:#030206;
+  padding:4rem clamp(1rem,4vw,4rem) 2rem;
+}
+.footer-grid{
+  width:min(1180px,100%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1.25fr;
+  gap:2rem;
+}
+.footer h4{font-family:Outfit,sans-serif;color:var(--gold-2);letter-spacing:.09em;margin-bottom:1rem;font-size:.86rem}
+.footer p,.footer a{color:var(--muted);line-height:1.78;text-decoration:none}
+.footer a:hover{color:var(--paper)}
+.footer .logo-mark{width:240px;height:106px}
+.footer ul{list-style:none}
+.footer-bottom{
+  width:min(1180px,100%);
+  margin:2.4rem auto 0;
+  padding-top:1.4rem;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  color:var(--quiet);
+  font-size:.85rem;
+}
+.sticky-buy{
+  position:fixed;
+  left:50%;
+  bottom:16px;
+  z-index:118;
+  transform:translateX(-50%) translateY(160%);
+  width:min(660px,calc(100% - 1.2rem));
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.7rem;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(5,4,7,.86);
+  backdrop-filter:blur(16px);
+  box-shadow:0 18px 70px rgba(0,0,0,.45);
+  padding:.55rem;
+  transition:.28s ease;
+}
+.sticky-buy.show{transform:translateX(-50%) translateY(0)}
+.sticky-buy span{padding-left:.8rem;color:var(--muted)}
+.sticky-actions{display:flex;gap:.5rem;align-items:center}
+.sticky-buy .btn,.sticky-buy .cart-btn{border-radius:999px;min-height:42px}
+.overlay{
+  position:fixed;
+  inset:0;
+  z-index:180;
+  background:rgba(0,0,0,.62);
+  display:none;
+}
+.overlay.open{display:block}
+.cart-panel{
+  position:fixed;
+  top:0;
+  right:0;
+  z-index:190;
+  width:min(440px,100%);
+  height:100svh;
+  display:flex;
+  flex-direction:column;
+  transform:translateX(110%);
+  transition:.32s ease;
+  border-left:1px solid var(--line);
+  background:#07060a;
+  box-shadow:var(--shadow);
+}
+.cart-panel.open{transform:translateX(0)}
+.cart-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding:1.1rem;
+  border-bottom:1px solid var(--line);
+}
+.cart-head h2{font-family:Outfit,sans-serif;color:var(--gold-2);font-size:1.25rem}
+.close{border:1px solid var(--line);background:transparent;color:var(--paper);border-radius:4px;width:40px;height:40px;font-size:1.5rem}
+.cart-items{flex:1;overflow:auto;padding:1rem}
+.cart-item{
+  display:grid;
+  grid-template-columns:64px 1fr auto;
+  gap:.85rem;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  padding:.9rem 0;
+}
+.mini-img{
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:#111;
+  color:var(--gold-2);
+  font-family:Outfit,sans-serif;
+}
+.cart-item h3{font-size:.95rem;line-height:1.25}
+.cart-item p{color:var(--muted);font-size:.86rem;margin-top:.25rem}
+.qty{display:flex;align-items:center;gap:.45rem;margin-top:.55rem}
+.qty button{width:26px;height:26px;border:1px solid var(--line);background:#111;color:var(--paper);border-radius:4px}
+.remove{border:0;background:transparent;color:#ff8ca0;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;font-weight:900}
+.cart-foot{padding:1rem;border-top:1px solid var(--line)}
+.total{display:flex;justify-content:space-between;color:var(--gold-2);font-family:Outfit,sans-serif;margin-bottom:1rem}
+.checkout-btn{width:100%;border:0;border-radius:4px;background:var(--gold);color:#080604;padding:1rem;text-transform:uppercase;letter-spacing:.14em;font-weight:900}
+.checkout-note{margin-top:.7rem;color:var(--quiet);font-size:.82rem;line-height:1.45}
+.toast{
+  position:fixed;
+  left:50%;
+  top:94px;
+  z-index:230;
+  transform:translateX(-50%) translateY(-16px);
+  opacity:0;
+  pointer-events:none;
+  border:1px solid rgba(136,240,196,.34);
+  border-radius:999px;
+  background:rgba(10,8,13,.9);
+  backdrop-filter:blur(16px);
+  color:var(--paper);
+  padding:.75rem 1rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.75rem;
+  font-weight:900;
+  transition:.25s ease;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (max-width:1100px){
+  .hero-shell,.story-grid,.tryon-grid,.fit-grid,.lab-grid,.origin-grid,.ms-grid{grid-template-columns:1fr}
+  .hero-stage{min-height:auto;max-width:720px;margin:auto;width:100%}
+  .quick-buy{width:min(620px,100%)}
+  .tryon-stage{min-height:580px}
+  .story-copy{min-height:260px}
+  .story-panel{max-width:680px}
+  .story-notes{grid-template-columns:repeat(3,1fr)}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .connect-logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .nav{height:68px}
+  .logo-mark{width:128px;height:38px}
+  .nav-links,.nav-actions .icon-btn{display:none}
+  .drop-bar{top:68px;font-size:.72rem;border-radius:4px;gap:.55rem}
+  .drop-bar span:nth-of-type(2){min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .drop-bar span:nth-of-type(3){display:none}
+  .drop-bar a{flex:0 0 auto}
+  .hero{padding-top:8rem}
+  .hero h1{font-size:clamp(2.8rem,13.5vw,4.25rem)}
+  .hero-lead{font-size:1.12rem;line-height:1.35}
+  .hero-sound-head{display:grid;grid-template-columns:1fr;gap:.35rem}
+  .hero-sound-head span{font-size:.76rem}
+  .hero-sound iframe{height:86px}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:.7rem}
+  .hero-actions .btn{width:100%;letter-spacing:.12em}
+  .hero-stage{min-height:auto;padding-top:1rem}
+  .quick-buy{width:100%;margin-top:.2rem}
+  .quick-buy .accepted-payments.compact .pay-logo-wall{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .product-grid,.story-notes,.bundle-meta,.footer-grid{grid-template-columns:1fr}
+  .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+  .trust-chip{min-height:50px;padding:.62rem}
+  .trust-chip span{font-size:.76rem}
+  .tryon-stage{min-height:520px}
+  .tryon-avatar{width:min(330px,84vw);height:480px}
+  .tryon-garment{width:236px;height:278px;top:118px}
+  .tryon-garment[data-piece="tee"]{width:268px;height:208px;top:158px}
+  .tryon-garment[data-piece="jacket"]{width:244px;height:302px;top:108px}
+  .avatar-photo{width:214px;height:368px}
+  .avatar-head{width:74px;height:74px}
+  .avatar-body{top:106px;width:138px;height:214px}
+  .avatar-leg.left,.avatar-leg.right{top:304px;height:144px;width:50px}
+  .style-options,.print-options{grid-template-columns:1fr}
+  .color-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tryon-result{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .accepted-payments.compact .pay-logo-wall{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .accepted-payments.compact .pay-logo-card{gap:.3rem}
+  .accepted-payments.compact .pay-logo-card .pay-brand-logo{width:34px;height:20px}
+  .accepted-payments.compact .pay-logo-card b{font-size:.5rem;letter-spacing:.05em}
+  .story-sticky{padding-top:5rem}
+  .story-stage{min-height:480px}
+  .story-product{width:min(340px,82vw)}
+  .section-head{display:block}
+  .fit-options,.vibe-options{grid-template-columns:1fr}
+  .connect-logos{grid-template-columns:1fr}
+  .logo-tile{min-height:104px}
+  .newsletter form{grid-template-columns:1fr}
+  .footer-bottom{display:block}
+  .sticky-buy span{display:none}
+  .sticky-actions{width:100%;display:grid;grid-template-columns:1fr auto}
+  .sticky-buy .btn{width:100%}
+  .cart-panel{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .hero-product,.story-product,.story-dial,.stage-rings{transform:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#collection">Skip to collection</a>
+<canvas class="depth-canvas" id="depthCanvas" aria-hidden="true"></canvas>
+<div class="toast" id="toast">Added to cart</div>
+<div class="overlay" id="overlay"></div>
+<svg class="sr-only" aria-hidden="true" focusable="false">
+  <symbol id="icon-soundcloud" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M18.2 34H37a7 7 0 0 0 .8-14 10.4 10.4 0 0 0-19.6-3.3V34Zm-3.8 0h1.9V16.8c-.6.2-1.3.5-1.9.9V34Zm-4.1 0h1.9V20.5a13 13 0 0 0-1.9 2.8V34Zm-4.1 0h1.9v-8.1A8.4 8.4 0 0 0 6.4 34Z"/>
+  </symbol>
+  <symbol id="icon-spotify" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="20" fill="currentColor"/>
+    <path d="M14 18.9c7-2.1 16.1-1.2 22.2 2.3M16 25c5.7-1.6 13-1 17.8 1.9M17.6 30.7c4.4-1.2 9.8-.8 13.4 1.2" fill="none" stroke="#050407" stroke-width="3.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-bandcamp" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M4 34.5 17 13.5h27L31 34.5H4Z"/>
+  </symbol>
+  <symbol id="icon-gmail" viewBox="0 0 48 48">
+    <path d="M7 14h34v24H7V14Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+    <path d="m8 15 16 13 16-13" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 48 48">
+    <rect x="9" y="9" width="30" height="30" rx="9" fill="none" stroke="currentColor" stroke-width="4"/>
+    <circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="4"/>
+    <circle cx="33" cy="15" r="2.4" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-facebook" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M42 24a18 18 0 1 0-20.8 17.8V29.3h-4.6V24h4.6v-4c0-4.6 2.7-7.1 6.9-7.1 2 0 4 .3 4 .3v4.5h-2.3c-2.2 0-2.9 1.4-2.9 2.8V24h5l-.8 5.3h-4.2v12.5A18 18 0 0 0 42 24Z"/>
+  </symbol>
+  <symbol id="icon-youtube" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M43 17.2c-.4-1.7-1.8-3-3.4-3.4C36.5 13 24 13 24 13s-12.5 0-15.6.8A4.8 4.8 0 0 0 5 17.2c-.8 3-.8 6.8-.8 6.8s0 3.8.8 6.8c.4 1.7 1.8 3 3.4 3.4C11.5 35 24 35 24 35s12.5 0 15.6-.8c1.6-.4 3-1.7 3.4-3.4.8-3 .8-6.8.8-6.8s0-3.8-.8-6.8Z"/>
+    <path fill="#050407" d="M20.5 29.2V18.8L29.6 24l-9.1 5.2Z"/>
+  </symbol>
+  <symbol id="icon-x" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M28.4 21.1 41 7h-5.3l-9.8 11-7.8-11H7.5l13.1 18.5L7 41h5.3l10.8-12.1L31.7 41h10.8L28.4 21.1Zm-3.8 4.2-1.3-1.8L13 11h2.6l20.8 26h-2.6l-9.2-11.7Z"/>
+  </symbol>
+  <symbol id="icon-tiktok" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M31.7 7c1.2 5.7 4.4 9 9.3 9.4v6.5a15 15 0 0 1-9.1-3.1v11.6c0 6.4-4.8 10.6-11 10.6-6 0-10.4-4.2-10.4-9.8 0-6.2 5-10.2 11.6-9.6v6.7c-3.1-.8-5.2.7-5.2 2.9 0 1.9 1.5 3.2 3.7 3.2 2.5 0 4.1-1.5 4.1-4.9V7h7Z"/>
+  </symbol>
+  <symbol id="icon-parvati" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M24 6c4.8 6.3 8 11.6 8 17 0 6-3.8 10-8 13-4.2-3-8-7-8-13 0-5.4 3.2-10.7 8-17Z"/>
+    <path fill="currentColor" opacity=".68" d="M13 17c5.8 1.4 10 5.2 11 11-6 .6-11.2-3.3-13.8-9.5L13 17Zm22 0-1.2 1.5C31.2 24.7 26 28.6 20 28c1-5.8 5.2-9.6 11-11h4Z"/>
+    <path d="M10 38h28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-stripe" viewBox="0 0 48 48">
+    <rect x="5" y="9" width="38" height="30" rx="7" fill="currentColor"/>
+    <path d="M31.4 18.2c-2-1.1-4.4-1.5-6.8-1.5-5 0-8.2 2.5-8.2 6.1 0 5.7 8.7 4.8 8.7 7.2 0 1-1.2 1.4-3.2 1.4a14 14 0 0 1-6.8-1.9v5a17 17 0 0 0 7.1 1.4c5.4 0 8.6-2.6 8.6-6.5 0-6-8.8-5-8.8-7.3 0-.8.9-1.3 2.8-1.3 2.1 0 4.5.7 6.6 1.8v-4.4Z" fill="#050407"/>
+  </symbol>
+  <symbol id="icon-paypal" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M15.5 8h15.1c5.2 0 8.9 3.3 8 8.8-1 6.4-5.4 10-12.4 10h-4.7L19.8 40h-7.3L15.5 8Zm7 12.8h4.4c2.4 0 4.1-1.2 4.5-3.5.4-2.1-.9-3.3-3.4-3.3h-4.5l-1 6.8Z"/>
+  </symbol>
+  <symbol id="icon-shopify" viewBox="0 0 48 48">
+    <path d="M14 16.5 36 14l3 26-28 3-3-25 6-.7Z" fill="currentColor"/>
+    <path d="M18 17c.8-5.8 3.8-9 7-9 3.5 0 5.7 3 6.1 7.3M18 30c2 1.6 7.6 2.3 8.4-.6.9-3-6.3-2.9-5.4-6.2.7-2.8 5.3-2.4 7.5-1.1" fill="none" stroke="#050407" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-afterpay" viewBox="0 0 48 48">
+    <rect x="5" y="12" width="38" height="24" rx="12" fill="currentColor"/>
+    <path d="m17 24 6-6 8 8h-5l-4-4-6 6m15-4-6 6-8-8h5l4 4 6-6" fill="none" stroke="#050407" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-apple" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M30.5 6c.1 3-2 5.7-4.8 6.9-.3-3 1.8-5.9 4.8-6.9ZM36.8 33c-1.1 2.7-2.4 5.1-4.4 7.4-1.7 2-3.4 1.7-5.4.9-2.1-.9-4.1-.9-6.3 0-2.4.9-3.7.7-5.2-1.1-5.2-6.2-6-17.5-1.5-22.4 2.3-2.5 5.1-3 8.1-1.8 1.7.7 3 .7 4.7 0 3.1-1.3 5.9-.8 8.2 1.7-4.9 3-4.1 10.2 2.2 15.3Z"/>
+  </symbol>
+  <symbol id="icon-google" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M43 24.5c0-1.4-.1-2.5-.3-3.7H24v7h10.7c-.4 2.3-1.7 4.2-3.7 5.5v4.5h6c3.6-3.3 6-8.1 6-13.3Z"/>
+    <path fill="currentColor" opacity=".65" d="M24 44c5.4 0 10-1.8 13.2-4.9l-6-4.6c-1.7 1.1-3.9 1.8-7.2 1.8-5.2 0-9.7-3.5-11.3-8.3H6.5v4.7A20 20 0 0 0 24 44Z"/>
+    <path fill="currentColor" opacity=".85" d="M12.7 28a12 12 0 0 1 0-7.7v-4.7H6.5a20 20 0 0 0 0 17.1L12.7 28Z"/>
+    <path fill="currentColor" opacity=".5" d="M24 12c3 0 5.7 1 7.8 3l5.6-5.6A19 19 0 0 0 24 4 20 20 0 0 0 6.5 15.6l6.2 4.7C14.3 15.5 18.8 12 24 12Z"/>
+  </symbol>
+  <symbol id="icon-visa" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="6" fill="currentColor"/>
+    <text x="32" y="26" text-anchor="middle" font-size="13" font-family="Arial, sans-serif" font-weight="900" fill="#050407">VISA</text>
+  </symbol>
+  <symbol id="icon-mastercard" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="6" fill="currentColor" opacity=".35"/>
+    <circle cx="27" cy="20" r="10" fill="currentColor"/>
+    <circle cx="37" cy="20" r="10" fill="currentColor" opacity=".65"/>
+  </symbol>
+  <symbol id="icon-amex" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="6" fill="currentColor"/>
+    <text x="32" y="25" text-anchor="middle" font-size="11" font-family="Arial, sans-serif" font-weight="900" fill="#050407">AMEX</text>
+  </symbol>
+  <symbol id="icon-shoppay" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="10" fill="currentColor"/>
+    <text x="32" y="25" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" font-weight="900" fill="#050407">SHOP</text>
+  </symbol>
+  <symbol id="icon-klarna" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="6" fill="currentColor"/>
+    <text x="32" y="25" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" font-weight="900" fill="#050407">KLARNA</text>
+  </symbol>
+  <symbol id="icon-zip" viewBox="0 0 64 40">
+    <rect x="2" y="7" width="60" height="26" rx="6" fill="currentColor"/>
+    <path d="M17 16h14l-8 8h8v4H16l8-8h-7v-4Zm21 0h9l-7 12h-9l7-12Z" fill="#050407"/>
+  </symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <a class="logo" href="#top" aria-label="KĀLKĪ VĀTTHĀ home">
+    <img class="logo-mark" src="assets/kalki-vattha-logo-tight.jpg" alt="KĀLKĪ VĀTTHĀ">
+    <span class="logo-word">KĀLKĪ VĀTTHĀ</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#theatre">Try On</a></li>
+    <li><a href="#music">Sound</a></li>
+    <li><a href="#shipping">Ship</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a class="icon-btn" href="#newsletter" aria-label="Join the drop list">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+    </a>
+    <button class="cart-btn" id="openCart" type="button">Cart <span class="cart-count" id="cartCount">0</span></button>
+  </div>
+</nav>
+
+<div class="drop-bar" aria-label="Drop offer">
+  <span class="spark"></span>
+  <span><b>First drop live:</b> free ritual tote on the first 48 orders</span>
+  <span>Melbourne packed</span>
+  <a href="#collection">Shop</a>
+</div>
+
+<main id="top">
+  <section class="hero" aria-label="Kalki Vattha launch collection">
+    <div class="hero-shell">
+      <div class="hero-copy reveal">
+        <div class="hero-brand-card">
+          <img src="assets/kalki-vattha-logo-tight.jpg" alt="KĀLKĪ VĀTTHĀ lotus and Krishna flute logo">
+          <span>Official launch identity</span>
+        </div>
+        <span class="kicker">Goa-born sound - Melbourne run</span>
+        <h1>KĀLKĪ <span>VĀTTHĀ</span></h1>
+        <p class="hero-lead">Limited psychedelic streetwear for dance floors, collectors, and night travellers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#collection">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Shop the drop
+          </a>
+          <a class="btn btn-ghost" href="#theatre">Try on myself</a>
+        </div>
+        <div class="hero-sound" aria-label="SoundCloud preview">
+          <div class="hero-sound-head">
+            <a class="sound-link" href="https://on.soundcloud.com/bC4OXgo3Xsho1uKL0y" target="_blank" rel="noopener">
+              <svg class="brand-icon" aria-hidden="true"><use href="#icon-soundcloud"></use></svg>
+              SoundCloud
+            </a>
+            <span>Play the frequency while you shop the drop</span>
+          </div>
+          <p class="sound-purpose">Press play and keep the Goa-born sound running while you shop the first drop.</p>
+          <iframe title="Farebi Jalebi SoundCloud preview" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/farebi-jalebi&color=%23ff6a22&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+        </div>
+        <div class="trust-strip" aria-label="Store confidence signals">
+          <div class="trust-chip"><b>Secure pay</b><span>Stripe, PayPal, Apple Pay</span></div>
+          <div class="trust-chip"><b>Worldwide</b><span>Melbourne packed</span></div>
+          <div class="trust-chip"><b>Low stock</b><span>First drop numbered</span></div>
+          <div class="trust-chip"><b>Try on</b><span>Fit picker below</span></div>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-label="Featured hoodie">
+        <div class="stage-rings" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <figure class="hero-product reveal" id="heroHoodieViewer" aria-label="Interactive 360 degree featured hoodie model">
+          <div class="model-status">
+            <span class="model-pill">360 hoodie</span>
+            <button class="model-toggle" id="toggleHeroSpin" type="button" aria-pressed="false">Pause</button>
+          </div>
+          <div class="hoodie-image-360" id="heroHoodieTurntable" aria-hidden="true">
+            <span class="hoodie-face front"><img src="assets/kalki-vattha-hero-hoodie.png" alt=""></span>
+            <span class="hoodie-face back"><img src="assets/kalki-vattha-hero-hoodie.png" alt=""></span>
+          </div>
+          <img class="sr-only" src="assets/kalki-vattha-hero-hoodie.png" alt="Black oversized KĀLKĪ VĀTTHĀ Night Temple hoodie with gold psychedelic artwork">
+          <span class="model-hint">Drag to rotate</span>
+        </figure>
+        <aside class="quick-buy reveal" aria-label="Quick order featured hoodie">
+          <div class="quick-top">
+            <div>
+              <p class="eyebrow">Hero piece</p>
+              <h2>Night Temple Oversize Hoodie</h2>
+            </div>
+            <div class="quick-price">AUD $148</div>
+          </div>
+          <div class="size-row" id="heroSizes" aria-label="Choose size">
+            <button class="active" type="button" data-size="S">S</button>
+            <button type="button" data-size="M">M</button>
+            <button type="button" data-size="L">L</button>
+            <button type="button" data-size="XL">XL</button>
+          </div>
+          <div class="stock-line"><span>37 percent of launch stock left</span><b>18/48</b></div>
+          <div class="stock-meter" aria-hidden="true"><span></span></div>
+          <button class="btn btn-primary" type="button" id="heroAdd">Add featured hoodie</button>
+          <div class="mini-proof" aria-label="Product details">
+            <span>420 GSM fleece</span><span>Oversize fit</span><span>Gold artwork</span>
+          </div>
+          <div class="accepted-payments compact" aria-label="Accepted payment logos">
+            <span>Accepted payments</span>
+            <div class="pay-logo-wall">
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/visa" alt="Visa" loading="lazy"><b>Visa</b></div>
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/mastercard" alt="Mastercard" loading="lazy"><b>Mastercard</b></div>
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/paypal" alt="PayPal" loading="lazy"><b>PayPal</b></div>
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/applepay" alt="Apple Pay" loading="lazy"><b>Apple Pay</b></div>
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/afterpay" alt="Afterpay" loading="lazy"><b>Afterpay</b></div>
+              <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/googlepay" alt="Google Pay" loading="lazy"><b>Google Pay</b></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Limited sacred drops</span><span>Worldwide shipping</span><span>Goa trance energy</span><span>Melbourne packed</span><span>Secure checkout ready</span><span>Serial numbered pieces</span>
+      <span>Limited sacred drops</span><span>Worldwide shipping</span><span>Goa trance energy</span><span>Melbourne packed</span><span>Secure checkout ready</span><span>Serial numbered pieces</span>
+    </div>
+  </div>
+
+  <section class="tryon-studio" id="theatre" aria-label="Kalki Vattha try-on studio">
+    <div class="wrap tryon-grid">
+      <div class="tryon-stage reveal" id="tryonStudio">
+        <div class="tryon-badge" id="tryonBadge">3D hoodie model</div>
+        <div class="tryon-avatar" aria-hidden="true">
+          <img class="avatar-photo" id="avatarPhoto" alt="">
+          <span class="avatar-line avatar-head"></span>
+          <span class="avatar-line avatar-body"></span>
+          <span class="avatar-line avatar-leg left"></span>
+          <span class="avatar-line avatar-leg right"></span>
+          <div class="tryon-garment" id="tryonGarment" data-piece="hoodie">
+            <span class="garment-detail hood"></span>
+            <span class="garment-detail collar"></span>
+            <span class="garment-detail drawstring left"></span>
+            <span class="garment-detail drawstring right"></span>
+            <span class="garment-detail pocket"></span>
+            <span class="garment-detail zip"></span>
+            <span class="garment-detail panel left"></span>
+            <span class="garment-detail panel right"></span>
+            <span class="garment-detail hem"></span>
+            <span class="garment-print" id="tryonPrint">ॐ</span>
+            <span class="garment-name" id="tryonGarmentName">Hoodie</span>
+          </div>
+          <span class="tryon-shadow"></span>
+        </div>
+      </div>
+      <div class="studio-panel reveal">
+        <p class="eyebrow">Try on myself</p>
+        <h2 class="section-title">Build your fit</h2>
+        <p class="section-copy">Pick the piece, launch colour, artwork and fit. Add the final selection straight to cart.</p>
+
+        <div class="studio-group">
+          <span class="control-label">Piece</span>
+          <div class="style-options" id="tryPieceOptions">
+            <button class="active" type="button" data-piece="hoodie">Hoodie</button>
+            <button type="button" data-piece="tee">Tee</button>
+            <button type="button" data-piece="jacket">Jacket</button>
+          </div>
+        </div>
+
+        <div class="studio-group">
+          <span class="control-label">Colour - black / brown / navy</span>
+          <div class="color-options" id="tryColorOptions">
+            <button class="active" type="button" data-color="black" aria-label="Black" style="--swatch:#08080b"></button>
+            <button type="button" data-color="brown" aria-label="Brown" style="--swatch:#4b2f24"></button>
+            <button type="button" data-color="navy" aria-label="Navy blue" style="--swatch:#101a2f"></button>
+          </div>
+        </div>
+
+        <div class="studio-group">
+          <span class="control-label">Artwork</span>
+          <div class="print-options" id="tryPrintOptions">
+            <button class="active" type="button" data-print="lotus">Lotus flute</button>
+            <button type="button" data-print="tape">Goa tape</button>
+            <button type="button" data-print="mandala">Mandala</button>
+          </div>
+        </div>
+
+        <div class="studio-group">
+          <span class="control-label">Photo</span>
+          <div class="photo-tools">
+            <label class="photo-upload">Try my photo<input id="tryPhotoInput" type="file" accept="image/*"></label>
+            <button class="photo-reset" id="clearTryPhoto" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="studio-group">
+          <span class="control-label">Fit</span>
+          <div class="fit-options" id="tryFitOptions">
+            <button type="button" data-fit="clean">Clean</button>
+            <button class="active" type="button" data-fit="relaxed">Relaxed</button>
+            <button type="button" data-fit="oversize">Oversize</button>
+          </div>
+          <div class="range-row">
+            <input id="tryHeightRange" type="range" min="155" max="200" value="176" aria-label="Height in centimeters">
+            <b><span id="tryHeightValue">176</span> cm</b>
+          </div>
+        </div>
+
+        <div class="tryon-result" aria-live="polite">
+          <b class="tryon-size" id="tryonSize">M</b>
+          <div class="tryon-choice">
+            <b id="tryonProductName">Night Temple Oversize Hoodie</b>
+            <span id="tryonSummary">Relaxed fit - Lotus flute - Black</span>
+            <small id="tryonSpec">Hood, drawstrings, kangaroo pocket</small>
+          </div>
+          <b class="tryon-price" id="tryonPrice">AUD $148</b>
+        </div>
+        <button class="btn btn-primary" type="button" id="tryonAdd">Add my selection</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal">Current collection</p>
+          <h2 class="section-title reveal">Shop the first drop</h2>
+        </div>
+        <p class="section-copy reveal">Heavy pieces, fast sizing, one-tap cart.</p>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="hoodie">Hoodies</button>
+        <button class="filter" type="button" data-filter="tee">Tees</button>
+        <button class="filter" type="button" data-filter="bundle">Bundles</button>
+        <button class="filter" type="button" data-filter="artist">Artist</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="fit-section" id="fit">
+    <div class="wrap fit-grid">
+      <div class="reveal">
+        <p class="eyebrow">Instant fit confidence</p>
+        <h2 class="section-title">Find your drop size</h2>
+        <p class="section-copy">Quick size guidance for the first drop.</p>
+      </div>
+      <div class="fit-panel reveal">
+        <p class="eyebrow">Fit preference</p>
+        <div class="fit-options" id="fitOptions">
+          <button class="active" type="button" data-fit="clean">Clean</button>
+          <button type="button" data-fit="relaxed">Relaxed</button>
+          <button type="button" data-fit="oversize">Oversize</button>
+        </div>
+        <div class="range-row">
+          <input id="heightRange" type="range" min="155" max="200" value="176" aria-label="Height in centimeters">
+          <b><span id="heightValue">176</span> cm</b>
+        </div>
+        <div class="size-result" aria-live="polite">
+          <b id="sizeResult">L</b>
+          <span id="sizeCopy">For a relaxed festival fit, start with L. Size down for a sharper street fit.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lab" id="lab">
+    <div class="wrap lab-grid">
+      <div class="bundle-preview reveal" aria-hidden="true">
+        <div class="bundle-stack">
+          <div class="bundle-item">ॐ</div>
+          <div class="bundle-item">✦</div>
+          <div class="bundle-item">◈</div>
+        </div>
+      </div>
+      <div class="lab-panel lab-copy reveal">
+        <p class="eyebrow">Bundle ritual</p>
+        <h2 class="section-title">Build a set that feels personal</h2>
+        <p>Pick the mood. Take the full fit.</p>
+        <div class="vibe-options" id="vibeOptions">
+          <button class="active" type="button" data-vibe="temple">Temple</button>
+          <button type="button" data-vibe="forest">Forest</button>
+          <button type="button" data-vibe="sunrise">Sunrise</button>
+        </div>
+        <h3 id="bundleTitle">Night Temple Set</h3>
+        <p id="bundleCopy">Black hoodie, cassette tee, and ritual tote for deep-night dance floors and cold Melbourne exits.</p>
+        <div class="bundle-meta">
+          <span><b id="bundlePrice">AUD $224</b>Bundle price</span>
+          <span><b>3 pcs</b>Drop uniform</span>
+          <span><b>Free tote</b>First 48 orders</span>
+        </div>
+        <button class="btn btn-primary" type="button" id="addBundle">Add bundle</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin" id="origin">
+    <div class="wrap origin-grid">
+      <div class="origin-art reveal">
+        <img class="origin-logo" src="assets/kalki-vattha-logo-tight.jpg" alt="KĀLKĪ VĀTTHĀ logo">
+        <div class="coordinate">GOA / INDIA<br><span style="color:var(--muted);font-family:Manrope;letter-spacing:.18em;font-size:.75rem">BEACHES - FORESTS - CASSETTES - TRIBE</span></div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Research-corrected story</p>
+        <h2 class="section-title">The sound started in Goa.</h2>
+        <p class="section-copy">Lotus and Krishna flute in the identity. Goa beach and forest culture in the sound.</p>
+        <div class="quote">Goa trance emerged around Goa in the early 1990s, shaped by traveller DJs, cassette-sharing, electronic imports, psychedelic aesthetics, and open-air parties.</div>
+        <div class="research-list" aria-label="Research sources">
+          <a href="https://en.wikipedia.org/wiki/Goa_trance" target="_blank" rel="noopener">Goa trance notes</a>
+          <a href="https://bibliolore.org/2016/03/31/the-roots-of-goa-trance/" target="_blank" rel="noopener">Roots research</a>
+          <a href="https://parvati-records.com/farebi-jalebi/" target="_blank" rel="noopener">Artist source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="music-shipping" id="music">
+    <div class="wrap ms-grid">
+      <div class="music-panel reveal">
+        <p class="eyebrow">The frequency</p>
+        <h2 class="section-title" style="font-size:clamp(2rem,3.8vw,3.7rem)">Music inside the brand</h2>
+        <p class="section-copy">Listen, connect, then return to the drop.</p>
+        <div class="connect-logos">
+          <a class="logo-tile" style="--brand:#ff6a22" href="https://on.soundcloud.com/bC4OXgo3Xsho1uKL0y" target="_blank" rel="noopener" aria-label="Open SoundCloud">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-soundcloud"></use></svg>
+            <span><b>SoundCloud</b>Artist link</span>
+          </a>
+          <a class="logo-tile" style="--brand:#1ed760" href="https://open.spotify.com/artist/5Z7yFcfWDu27jQ1EAVStR5" target="_blank" rel="noopener" aria-label="Open Spotify">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-spotify"></use></svg>
+            <span><b>Spotify</b>Artist profile</span>
+          </a>
+          <a class="logo-tile" style="--brand:#65c8c2" href="https://farebijalebi.bandcamp.com/" target="_blank" rel="noopener" aria-label="Open Bandcamp">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-bandcamp"></use></svg>
+            <span><b>Bandcamp</b>Direct support</span>
+          </a>
+          <a class="logo-tile" style="--brand:#e0ad4f" href="https://parvati-records.com/contact/" target="_blank" rel="noopener" aria-label="Book Farebi Jalebi through Parvati Records">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-parvati"></use></svg>
+            <span><b>Parvati Booking</b>Farebi Jalebi request</span>
+          </a>
+          <a class="logo-tile" style="--brand:#e4405f" href="https://www.instagram.com/farebi_jalebi/" target="_blank" rel="noopener" aria-label="Open Instagram">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            <span><b>Instagram</b>Farebi Jalebi</span>
+          </a>
+          <a class="logo-tile" style="--brand:#1877f2" href="https://www.facebook.com/farebiJalebi" target="_blank" rel="noopener" aria-label="Open Facebook">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
+            <span><b>Facebook</b>Farebi Jalebi</span>
+          </a>
+          <a class="logo-tile" style="--brand:#ea4335" href="mailto:hello@kalkivattha.com" aria-label="Email KALKI VATTHA">
+            <svg class="brand-icon" aria-hidden="true"><use href="#icon-gmail"></use></svg>
+            <span><b>Gmail</b>hello@kalkivattha.com</span>
+          </a>
+        </div>
+        <iframe class="soundcloud-frame" title="Farebi Jalebi on SoundCloud" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/farebi-jalebi&color=%23e0ad4f&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      </div>
+      <div class="ship-panel reveal" id="shipping">
+        <p class="eyebrow">Order confidence</p>
+        <h2 class="section-title" style="font-size:clamp(2rem,3.8vw,3.7rem)">Ready for worldwide checkout</h2>
+        <ul class="ship-list">
+          <li>Melbourne packed. Worldwide shipping positioned.</li>
+          <li>Stripe, Shopify, PayPal, Apple Pay, Google Pay and Afterpay ready.</li>
+          <li>Live gateway URLs can be dropped into the checkout config.</li>
+        </ul>
+        <div class="accepted-payments" aria-label="Accepted payment logos">
+          <span>Accepted worldwide payments</span>
+          <div class="pay-logo-wall">
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/stripe" alt="Stripe" loading="lazy"><b>Stripe</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/paypal" alt="PayPal" loading="lazy"><b>PayPal</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/shopify" alt="Shopify" loading="lazy"><b>Shopify</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/afterpay" alt="Afterpay" loading="lazy"><b>Afterpay</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/applepay" alt="Apple Pay" loading="lazy"><b>Apple Pay</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/googlepay" alt="Google Pay" loading="lazy"><b>Google Pay</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/visa" alt="Visa" loading="lazy"><b>Visa</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/mastercard" alt="Mastercard" loading="lazy"><b>Mastercard</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/americanexpress" alt="Amex" loading="lazy"><b>Amex</b></div>
+            <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/klarna" alt="Klarna" loading="lazy"><b>Klarna</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap reveal">
+      <p class="eyebrow">First access</p>
+      <h2 class="section-title">Enter the circle</h2>
+      <p class="section-copy">Drop alerts, private codes, early access.</p>
+      <form id="newsletterForm">
+        <input type="email" required placeholder="your@email.com" aria-label="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a class="logo" href="#top" aria-label="KĀLKĪ VĀTTHĀ home">
+        <img class="logo-mark" src="assets/kalki-vattha-logo-tight.jpg" alt="KĀLKĪ VĀTTHĀ">
+        <span class="logo-word">KĀLKĪ VĀTTHĀ</span>
+      </a>
+      <p style="margin-top:1rem;max-width:380px">Melbourne streetwear, Goa-born frequency, worldwide tribe.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul><li><a href="#collection">Hoodies</a></li><li><a href="#collection">Artist Editions</a></li><li><a href="#collection">Tees</a></li><li><a href="#lab">Bundles</a></li></ul>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <ul><li><a href="#shipping">Shipping</a></li><li><a href="#fit">Size Guide</a></li><li><a href="#shipping">Payments</a></li><li><a href="#newsletter">Returns</a></li></ul>
+    </div>
+    <div>
+      <h4>Music / Social</h4>
+      <ul><li><a href="https://on.soundcloud.com/bC4OXgo3Xsho1uKL0y" target="_blank" rel="noopener">SoundCloud</a></li><li><a href="https://open.spotify.com/artist/5Z7yFcfWDu27jQ1EAVStR5" target="_blank" rel="noopener">Spotify</a></li><li><a href="https://farebijalebi.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a></li><li><a href="https://parvati-records.com/contact/" target="_blank" rel="noopener">Parvati booking</a></li><li><a href="mailto:hello@kalkivattha.com">hello@kalkivattha.com</a></li></ul>
+      <div class="footer-socials" aria-label="Social and contact links">
+        <a href="https://on.soundcloud.com/bC4OXgo3Xsho1uKL0y" target="_blank" rel="noopener" aria-label="SoundCloud"><svg class="brand-icon" aria-hidden="true"><use href="#icon-soundcloud"></use></svg></a>
+        <a href="https://open.spotify.com/artist/5Z7yFcfWDu27jQ1EAVStR5" target="_blank" rel="noopener" aria-label="Spotify"><svg class="brand-icon" aria-hidden="true"><use href="#icon-spotify"></use></svg></a>
+        <a href="https://farebijalebi.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg class="brand-icon" aria-hidden="true"><use href="#icon-bandcamp"></use></svg></a>
+        <a href="https://parvati-records.com/contact/" target="_blank" rel="noopener" aria-label="Parvati booking"><svg class="brand-icon" aria-hidden="true"><use href="#icon-parvati"></use></svg></a>
+        <a href="https://www.instagram.com/farebi_jalebi/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="brand-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+        <a href="https://www.facebook.com/farebiJalebi" target="_blank" rel="noopener" aria-label="Facebook"><svg class="brand-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
+        <a href="mailto:hello@kalkivattha.com" aria-label="Email"><svg class="brand-icon" aria-hidden="true"><use href="#icon-gmail"></use></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 KĀLKĪ VĀTTHĀ. Melbourne, Australia.</span><span>Goa born sound - worldwide shipping - limited drops</span></div>
+</footer>
+
+<div class="sticky-buy" id="stickyBuy">
+  <span>Night Temple Hoodie is moving fast</span>
+  <div class="sticky-actions">
+    <a class="btn btn-primary" href="#collection">Shop now</a>
+    <button class="cart-btn" id="openCartSticky" type="button">Cart <span class="cart-count" id="cartCountSticky">0</span></button>
+  </div>
+</div>
+
+<aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-head">
+    <h2>Your Cart</h2>
+    <button class="close" id="closeCart" type="button" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="total"><span>Total</span><span id="cartTotal">AUD $0</span></div>
+    <button class="checkout-btn" id="checkoutBtn" type="button">Checkout with secure payment</button>
+    <div class="accepted-payments compact" aria-label="Accepted payment logos">
+      <span>Accepted payments</span>
+      <div class="pay-logo-wall">
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/visa" alt="Visa" loading="lazy"><b>Visa</b></div>
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/mastercard" alt="Mastercard" loading="lazy"><b>Mastercard</b></div>
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/paypal" alt="PayPal" loading="lazy"><b>PayPal</b></div>
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/applepay" alt="Apple Pay" loading="lazy"><b>Apple Pay</b></div>
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/googlepay" alt="Google Pay" loading="lazy"><b>Google Pay</b></div>
+        <div class="pay-logo-card"><img class="pay-brand-logo" src="https://cdn.simpleicons.org/afterpay" alt="Afterpay" loading="lazy"><b>Afterpay</b></div>
+      </div>
+    </div>
+    <p class="checkout-note">Gateway-ready checkout: replace the placeholder URLs in the JavaScript checkoutLinks config with your live Stripe, Shopify, PayPal or Afterpay checkout URLs.</p>
+  </div>
+</aside>
+
+<script>
+const products=[
+  {id:"night-temple-hoodie",name:"Night Temple Oversize Hoodie",type:"hoodie",tag:"Hero Piece",price:148,stock:"18 left",sizes:["S","M","L","XL"],visual:"image",symbol:"ॐ",desc:"420 GSM fleece. Oversize fit. Gold artwork."},
+  {id:"farebi-artist-hoodie",name:"Farebi Jalebi Artist Hoodie",type:"artist",tag:"Artist",price:168,stock:"12 left",sizes:["M","L","XL"],visual:"symbol",symbol:"☸",desc:"Stage-weight hoodie with artist detailing."},
+  {id:"goa-cassette-tee",name:"Goa Cassette Heavy Tee",type:"tee",tag:"Goa Origin",price:72,stock:"31 left",sizes:["S","M","L","XL"],visual:"tee",symbol:"▣",desc:"Washed black heavyweight tee."},
+  {id:"third-eye-pullover",name:"Third Eye Pullover",type:"hoodie",tag:"Psychedelic",price:136,stock:"21 left",sizes:["S","M","L","XL"],visual:"symbol",symbol:"⚛",desc:"Deep-night pullover with glowing geometry."},
+  {id:"mandala-jacket",name:"Mandala Embroidered Jacket",type:"artist",tag:"Collector",price:218,stock:"8 left",sizes:["M","L","XL"],visual:"symbol",symbol:"✦",desc:"Embroidered collector layer. Numbered drop."},
+  {id:"dj-essentials-bundle",name:"DJ Set Essentials Bundle",type:"bundle",tag:"Best Value",price:224,stock:"15 left",sizes:["M","L","XL"],visual:"tee",symbol:"◈",desc:"Hoodie, tee and tote in one set."}
+];
+const bundleOptions={
+  temple:{title:"Night Temple Set",copy:"Black hoodie, cassette tee, ritual tote.",price:224,items:["night-temple-hoodie","goa-cassette-tee","dj-essentials-bundle"]},
+  forest:{title:"Forest Frequency Set",copy:"Third Eye pullover, Goa tee, tote.",price:232,items:["third-eye-pullover","goa-cassette-tee","dj-essentials-bundle"]},
+  sunrise:{title:"Sunrise Collector Set",copy:"Artist hoodie, mandala jacket, tee.",price:398,items:["farebi-artist-hoodie","mandala-jacket","goa-cassette-tee"]}
+};
+const checkoutLinks={
+  stripe:"REPLACE_WITH_STRIPE_PAYMENT_LINK",
+  paypal:"REPLACE_WITH_PAYPAL_CHECKOUT_LINK",
+  shopify:"REPLACE_WITH_SHOPIFY_CHECKOUT_LINK",
+  afterpay:"REPLACE_WITH_AFTERPAY_OR_SHOPIFY_CHECKOUT_LINK"
+};
+let cart=JSON.parse(localStorage.getItem("kv_cart_v2")||"[]");
+let heroSize="S";
+let activeVibe="temple";
+const root=document.documentElement;
+const grid=document.getElementById("productGrid");
+const cartPanel=document.getElementById("cartPanel");
+const overlay=document.getElementById("overlay");
+
+function money(n){return "AUD $"+n.toLocaleString("en-AU")}
+function productById(id){return products.find(p=>p.id===id)}
+function showToast(message){
+  const toast=document.getElementById("toast");
+  toast.textContent=message;
+  toast.classList.add("show");
+  window.clearTimeout(showToast.timer);
+  showToast.timer=window.setTimeout(()=>toast.classList.remove("show"),1800);
+}
+function configuredCheckout(url){
+  return typeof url==="string"&&url.startsWith("https://")&&!url.includes("REPLACE_WITH");
+}
+function beginCheckout(method="stripe"){
+  if(!cart.length){showToast("Cart is empty");return}
+  const url=checkoutLinks[method]||checkoutLinks.stripe;
+  if(!configuredCheckout(url)){
+    showToast(`${method} gateway ready - add live URL`);
+    return;
+  }
+  window.open(url,"_blank","noopener");
+}
+function productVisual(p){
+  if(p.visual==="image"){
+    return `<img src="assets/kalki-vattha-hero-hoodie.png" alt="">`;
+  }
+  const cls=p.visual==="tee"?"garment-symbol tee":"garment-symbol";
+  return `<div class="${cls}" aria-hidden="true">${p.symbol}</div>`;
+}
+function renderProducts(filter="all"){
+  const items=products.filter(p=>filter==="all"||p.type===filter);
+  grid.innerHTML=items.map(p=>`
+    <article class="product reveal visible" data-type="${p.type}">
+      <div class="product-media">
+        <span class="badge">${p.tag}</span>
+        ${productVisual(p)}
+      </div>
+      <div class="product-body">
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <div class="price-row"><span class="price">${money(p.price)}</span><span class="stock-small">${p.stock}</span></div>
+        <div class="product-controls">
+          <select id="size-${p.id}" aria-label="Choose size for ${p.name}">
+            ${p.sizes.map(size=>`<option value="${size}">${size}</option>`).join("")}
+          </select>
+          <button class="add" type="button" onclick="addFromCard('${p.id}')">Add to cart</button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+function saveCart(){
+  localStorage.setItem("kv_cart_v2",JSON.stringify(cart));
+  renderCart();
+}
+function addToCart(id,size="M",qty=1){
+  const item=cart.find(i=>i.id===id&&i.size===size);
+  if(item){item.qty+=qty}else{cart.push({id,size,qty})}
+  saveCart();
+  showToast("Added to cart");
+}
+function addFromCard(id){
+  const select=document.getElementById(`size-${id}`);
+  addToCart(id,select?select.value:"M");
+}
+function addBundle(){
+  bundleOptions[activeVibe].items.forEach(id=>addToCart(id,"M",1));
+  showToast("Bundle added");
+  openCart();
+}
+function changeQty(id,size,delta){
+  const item=cart.find(i=>i.id===id&&i.size===size);
+  if(!item)return;
+  item.qty+=delta;
+  if(item.qty<=0)cart=cart.filter(i=>!(i.id===id&&i.size===size));
+  saveCart();
+}
+function removeItem(id,size){
+  cart=cart.filter(i=>!(i.id===id&&i.size===size));
+  saveCart();
+}
+function renderCart(){
+  const count=cart.reduce((sum,item)=>sum+item.qty,0);
+  document.getElementById("cartCount").textContent=count;
+  document.getElementById("cartCountSticky").textContent=count;
+  const total=cart.reduce((sum,item)=>sum+(productById(item.id)?.price||0)*item.qty,0);
+  document.getElementById("cartTotal").textContent=money(total);
+  const cartItems=document.getElementById("cartItems");
+  if(!cart.length){
+    cartItems.innerHTML=`<p class="section-copy">Your cart is empty. Add a drop piece and checkout will appear here.</p>`;
+    return;
+  }
+  cartItems.innerHTML=cart.map(item=>{
+    const product=productById(item.id);
+    return `<div class="cart-item">
+      <div class="mini-img">${product.symbol}</div>
+      <div>
+        <h3>${product.name}</h3>
+        <p>${money(product.price)} each - Size ${item.size}</p>
+        <div class="qty">
+          <button type="button" onclick="changeQty('${item.id}','${item.size}',-1)" aria-label="Decrease quantity">-</button>
+          <span>${item.qty}</span>
+          <button type="button" onclick="changeQty('${item.id}','${item.size}',1)" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <button class="remove" type="button" onclick="removeItem('${item.id}','${item.size}')">Remove</button>
+    </div>`;
+  }).join("");
+}
+function openCart(){
+  cartPanel.classList.add("open");
+  overlay.classList.add("open");
+  cartPanel.setAttribute("aria-hidden","false");
+}
+function closeCart(){
+  cartPanel.classList.remove("open");
+  overlay.classList.remove("open");
+  cartPanel.setAttribute("aria-hidden","true");
+}
+function clamp(value,min,max){return Math.max(min,Math.min(max,value))}
+function setupHeroHoodieModel(){
+  const viewer=document.getElementById("heroHoodieViewer");
+  const turntable=document.getElementById("heroHoodieTurntable");
+  const toggle=document.getElementById("toggleHeroSpin");
+  if(!viewer||!turntable)return;
+  const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let targetRotation=12;
+  let currentRotation=12;
+  let autoRotate=!reduceMotion;
+  let dragging=false;
+  let lastX=0;
+  let animationId=0;
+
+  function render(){
+    if(autoRotate&&!dragging)targetRotation+=.42;
+    currentRotation+=(targetRotation-currentRotation)*.08;
+    turntable.style.setProperty("--hoodie-rotation",`${currentRotation.toFixed(2)}deg`);
+    animationId=requestAnimationFrame(render);
+  }
+
+  function setAutoRotate(value){
+    autoRotate=value;
+    toggle.textContent=value?"Pause":"Spin";
+    toggle.setAttribute("aria-pressed",String(!value));
+  }
+
+  viewer.addEventListener("pointerdown",event=>{
+    if(event.target.closest(".model-toggle"))return;
+    dragging=true;
+    lastX=event.clientX;
+    setAutoRotate(false);
+    viewer.setPointerCapture?.(event.pointerId);
+  });
+  viewer.addEventListener("pointermove",event=>{
+    if(!dragging)return;
+    const delta=event.clientX-lastX;
+    lastX=event.clientX;
+    targetRotation+=delta*.62;
+  });
+  function stopDrag(event){
+    dragging=false;
+    if(event?.pointerId)viewer.releasePointerCapture?.(event.pointerId);
+  }
+  viewer.addEventListener("pointerup",stopDrag);
+  viewer.addEventListener("pointercancel",stopDrag);
+  toggle.addEventListener("click",event=>{
+    event.stopPropagation();
+    setAutoRotate(!autoRotate);
+  });
+
+  viewer.classList.add("model-ready");
+  setAutoRotate(autoRotate);
+  render();
+  window.addEventListener("pagehide",()=>cancelAnimationFrame(animationId),{once:true});
+}
+function updateMotion(){
+  const y=window.scrollY||window.pageYOffset;
+  const heroProgress=clamp(y/window.innerHeight,0,1);
+  root.style.setProperty("--hero-progress",heroProgress.toFixed(3));
+  document.getElementById("nav").classList.toggle("scrolled",y>48);
+  document.getElementById("stickyBuy").classList.toggle("show",y>window.innerHeight*.75);
+
+  const story=document.getElementById("storySpace");
+  if(!story){
+    root.style.setProperty("--story-progress",heroProgress.toFixed(3));
+    return;
+  }
+  const rect=story.getBoundingClientRect();
+  const distance=story.offsetHeight-window.innerHeight;
+  const progress=clamp(-rect.top/distance,0,1);
+  root.style.setProperty("--story-progress",progress.toFixed(3));
+  const step=Math.min(3,Math.floor(progress*4.001));
+  document.querySelectorAll(".story-panel").forEach((panel,index)=>panel.classList.toggle("active",index===step));
+}
+function setupPointerMotion(){
+  window.addEventListener("pointermove",event=>{
+    const x=(event.clientX/window.innerWidth-.5)*2;
+    const y=(event.clientY/window.innerHeight-.5)*2;
+    root.style.setProperty("--mx",x.toFixed(3));
+    root.style.setProperty("--my",y.toFixed(3));
+  },{passive:true});
+}
+function setupTiltCards(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  document.addEventListener("pointermove",event=>{
+    const card=event.target.closest(".product,.logo-tile");
+    if(!card)return;
+    const rect=card.getBoundingClientRect();
+    const x=((event.clientX-rect.left)/rect.width-.5)*2;
+    const y=((event.clientY-rect.top)/rect.height-.5)*2;
+    card.style.setProperty("--tilt-x",`${(x*7).toFixed(2)}deg`);
+    card.style.setProperty("--tilt-y",`${(-y*6).toFixed(2)}deg`);
+  },{passive:true});
+  document.addEventListener("pointerout",event=>{
+    const card=event.target.closest(".product,.logo-tile");
+    if(!card||card.contains(event.relatedTarget))return;
+    card.style.removeProperty("--tilt-x");
+    card.style.removeProperty("--tilt-y");
+  },{passive:true});
+}
+function setupReveal(){
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting)entry.target.classList.add("visible");
+    });
+  },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+}
+function setupFitFinder(){
+  const range=document.getElementById("heightRange");
+  const heightValue=document.getElementById("heightValue");
+  const sizeResult=document.getElementById("sizeResult");
+  const sizeCopy=document.getElementById("sizeCopy");
+  let fit="clean";
+  function update(){
+    const height=Number(range.value);
+    heightValue.textContent=height;
+    let index=height<166?0:height<176?1:height<186?2:3;
+    if(fit==="relaxed")index+=1;
+    if(fit==="oversize")index+=2;
+    const size=["S","M","L","XL"][clamp(index,0,3)];
+    sizeResult.textContent=size;
+    const fitLabel=fit==="clean"?"clean street fit":fit==="relaxed"?"relaxed festival fit":"oversized statement fit";
+    sizeCopy.textContent=`For a ${fitLabel}, start with ${size}. Adjust down if you prefer less drape.`;
+  }
+  document.querySelectorAll("#fitOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      document.querySelectorAll("#fitOptions button").forEach(btn=>btn.classList.remove("active"));
+      button.classList.add("active");
+      fit=button.dataset.fit;
+      update();
+    });
+  });
+  range.addEventListener("input",update);
+  update();
+}
+function setupTryOn(){
+  const studio=document.getElementById("tryonStudio");
+  if(!studio)return;
+  const garment=document.getElementById("tryonGarment");
+  const garmentName=document.getElementById("tryonGarmentName");
+  const printEl=document.getElementById("tryonPrint");
+  const sizeEl=document.getElementById("tryonSize");
+  const productName=document.getElementById("tryonProductName");
+  const summary=document.getElementById("tryonSummary");
+  const spec=document.getElementById("tryonSpec");
+  const price=document.getElementById("tryonPrice");
+  const badge=document.getElementById("tryonBadge");
+  const heightRange=document.getElementById("tryHeightRange");
+  const heightValue=document.getElementById("tryHeightValue");
+  const avatarPhoto=document.getElementById("avatarPhoto");
+  const state={piece:"hoodie",color:"black",print:"lotus",fit:"relaxed",height:176};
+  const pieceMap={
+    hoodie:{id:"night-temple-hoodie",label:"Hoodie",badge:"3D hoodie model",spec:"Hood, drawstrings, kangaroo pocket"},
+    tee:{id:"goa-cassette-tee",label:"Tee",badge:"3D tee model",spec:"Short sleeves, round neck, straight hem"},
+    jacket:{id:"mandala-jacket",label:"Jacket",badge:"3D jacket model",spec:"Collar, front panels, centre zip"}
+  };
+  const colorMap={
+    black:{label:"Black",garment:"#08080b",print:"#f4d789",glow:"#88f0c4"},
+    brown:{label:"Brown",garment:"#4b2f24",print:"#f4d789",glow:"#d99a2b"},
+    navy:{label:"Navy blue",garment:"#101a2f",print:"#f4d789",glow:"#6d8cff"}
+  };
+  const printMap={
+    lotus:{label:"Lotus flute",symbol:"ॐ"},
+    tape:{label:"Goa tape",symbol:"▣"},
+    mandala:{label:"Mandala",symbol:"✦"}
+  };
+  const fitMap={clean:"Clean",relaxed:"Relaxed",oversize:"Oversize"};
+  function setActive(group,button){
+    group.querySelectorAll("button").forEach(btn=>btn.classList.remove("active"));
+    button.classList.add("active");
+  }
+  function recommendedSize(product){
+    let index=state.height<164?0:state.height<178?1:state.height<190?2:3;
+    if(state.fit==="clean")index-=1;
+    if(state.fit==="oversize")index+=1;
+    let size=["S","M","L","XL"][clamp(index,0,3)];
+    if(!product.sizes.includes(size)){
+      size=product.sizes.includes("M")?"M":product.sizes[0];
+    }
+    return size;
+  }
+  function update(){
+    const piece=pieceMap[state.piece];
+    const color=colorMap[state.color];
+    const print=printMap[state.print];
+    const product=productById(piece.id);
+    const size=recommendedSize(product);
+    studio.style.setProperty("--garment",color.garment);
+    studio.style.setProperty("--print",color.print);
+    studio.style.setProperty("--glow",color.glow);
+    garment.dataset.piece=state.piece;
+    garmentName.textContent=piece.label;
+    badge.textContent=piece.badge;
+    printEl.textContent=print.symbol;
+    heightValue.textContent=state.height;
+    sizeEl.textContent=size;
+    productName.textContent=product.name;
+    summary.textContent=`${fitMap[state.fit]} fit - ${print.label} - ${color.label}`;
+    spec.textContent=piece.spec;
+    price.textContent=money(product.price);
+  }
+  document.querySelectorAll("#tryPieceOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      setActive(button.parentElement,button);
+      state.piece=button.dataset.piece;
+      update();
+    });
+  });
+  document.querySelectorAll("#tryColorOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      setActive(button.parentElement,button);
+      state.color=button.dataset.color;
+      update();
+    });
+  });
+  document.querySelectorAll("#tryPrintOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      setActive(button.parentElement,button);
+      state.print=button.dataset.print;
+      update();
+    });
+  });
+  document.querySelectorAll("#tryFitOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      setActive(button.parentElement,button);
+      state.fit=button.dataset.fit;
+      update();
+    });
+  });
+  heightRange.addEventListener("input",()=>{
+    state.height=Number(heightRange.value);
+    update();
+  });
+  document.getElementById("tryPhotoInput").addEventListener("change",event=>{
+    const file=event.target.files&&event.target.files[0];
+    if(!file)return;
+    const reader=new FileReader();
+    reader.onload=()=>{
+      avatarPhoto.src=reader.result;
+      studio.classList.add("has-photo");
+    };
+    reader.readAsDataURL(file);
+  });
+  document.getElementById("clearTryPhoto").addEventListener("click",()=>{
+    avatarPhoto.removeAttribute("src");
+    document.getElementById("tryPhotoInput").value="";
+    studio.classList.remove("has-photo");
+  });
+  document.getElementById("tryonAdd").addEventListener("click",()=>{
+    const piece=pieceMap[state.piece];
+    const product=productById(piece.id);
+    addToCart(piece.id,recommendedSize(product));
+    openCart();
+  });
+  update();
+}
+function setupVibes(){
+  const title=document.getElementById("bundleTitle");
+  const copy=document.getElementById("bundleCopy");
+  const price=document.getElementById("bundlePrice");
+  document.querySelectorAll("#vibeOptions button").forEach(button=>{
+    button.addEventListener("click",()=>{
+      document.querySelectorAll("#vibeOptions button").forEach(btn=>btn.classList.remove("active"));
+      button.classList.add("active");
+      activeVibe=button.dataset.vibe;
+      const data=bundleOptions[activeVibe];
+      title.textContent=data.title;
+      copy.textContent=data.copy;
+      price.textContent=money(data.price);
+    });
+  });
+}
+function setupCanvas(){
+  const canvas=document.getElementById("depthCanvas");
+  const ctx=canvas.getContext("2d");
+  let width=0,height=0,points=[];
+  function resize(){
+    const ratio=Math.min(window.devicePixelRatio||1,2);
+    width=canvas.clientWidth;
+    height=canvas.clientHeight;
+    canvas.width=Math.floor(width*ratio);
+    canvas.height=Math.floor(height*ratio);
+    ctx.setTransform(ratio,0,0,ratio,0,0);
+    points=Array.from({length:72},()=>({
+      x:(Math.random()-.5)*width*1.8,
+      y:(Math.random()-.5)*height*1.4,
+      z:Math.random()*900+80,
+      s:Math.random()*1.8+.35,
+      hue:Math.random()>.62?"136,240,196":"244,215,137"
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,width,height);
+    ctx.save();
+    ctx.translate(width/2,height/2);
+    for(const p of points){
+      p.z-=1.45;
+      if(p.z<40){p.z=980;p.x=(Math.random()-.5)*width*1.8;p.y=(Math.random()-.5)*height*1.4}
+      const scale=520/p.z;
+      const x=p.x*scale;
+      const y=p.y*scale;
+      const alpha=clamp(1-p.z/980,.05,.65);
+      ctx.fillStyle=`rgba(${p.hue},${alpha})`;
+      ctx.beginPath();
+      ctx.arc(x,y,p.s*scale,0,Math.PI*2);
+      ctx.fill();
+      if(alpha>.42){
+        ctx.strokeStyle=`rgba(${p.hue},${alpha*.16})`;
+        ctx.beginPath();
+        ctx.moveTo(x,y);
+        ctx.lineTo(x*.94,y*.94);
+        ctx.stroke();
+      }
+    }
+    ctx.restore();
+    requestAnimationFrame(draw);
+  }
+  resize();
+  window.addEventListener("resize",resize);
+  draw();
+}
+
+document.getElementById("openCart").addEventListener("click",openCart);
+document.getElementById("openCartSticky").addEventListener("click",openCart);
+document.getElementById("closeCart").addEventListener("click",closeCart);
+overlay.addEventListener("click",closeCart);
+document.getElementById("heroAdd").addEventListener("click",()=>addToCart("night-temple-hoodie",heroSize));
+document.getElementById("addBundle").addEventListener("click",addBundle);
+document.getElementById("checkoutBtn").addEventListener("click",()=>beginCheckout("stripe"));
+document.querySelectorAll("[data-checkout]").forEach(button=>{
+  button.addEventListener("click",()=>beginCheckout(button.dataset.checkout));
+});
+document.getElementById("newsletterForm").addEventListener("submit",event=>{
+  event.preventDefault();
+  event.currentTarget.reset();
+  showToast("You are on the drop list");
+});
+document.querySelectorAll("#heroSizes button").forEach(button=>{
+  button.addEventListener("click",()=>{
+    document.querySelectorAll("#heroSizes button").forEach(btn=>btn.classList.remove("active"));
+    button.classList.add("active");
+    heroSize=button.dataset.size;
+  });
+});
+document.querySelectorAll(".filter").forEach(button=>{
+  button.addEventListener("click",()=>{
+    document.querySelectorAll(".filter").forEach(btn=>btn.classList.remove("active"));
+    button.classList.add("active");
+    renderProducts(button.dataset.filter);
+  });
+});
+window.addEventListener("scroll",updateMotion,{passive:true});
+window.addEventListener("resize",updateMotion);
+setupHeroHoodieModel();
+setupPointerMotion();
+setupTiltCards();
+setupReveal();
+setupFitFinder();
+setupTryOn();
+setupVibes();
+setupCanvas();
+renderProducts();
+renderCart();
+updateMotion();
+</script>
+</body>
+</html>
